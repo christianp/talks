@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>π</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A talk about π for π Day">
+		<meta name="author" content="Christian Lawson-Perfect">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,10 +15,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/Bright/cmun-bright.css" id="theme">
+		<link rel="stylesheet" href="css/theme/cp.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -32,351 +35,313 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
 	</head>
 
 	<body>
 
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+        <div class="reveal">
+            <style type="text/css">
+                #pi-progress {
+                    opacity: 0.3;
+                    font-size: 0.7em;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    max-height: 1em;
+                    word-break: break-all;
+                    overflow-y: hidden;
+                    max-width: 100%;
+                }
+            </style>
+            <div id="pi-progress">π = 3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631...</div>
+            <div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<svg width="200" height="200" viewBox="-30 -30 60 60">
+						<circle cx="0" cy="0" r="30"/>
+						<text text-anchor="middle" alignment-baseline="central" fill="white">Pi</text>
+					</svg>
+					<h3>It's complicated</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
 					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Here's π. Or, it should really be written like this...
+					</aside>
+				</section>
+				<section>
+					<svg width="200" height="200" viewBox="-30 -30 60 60">
+						<circle cx="0" cy="0" r="30"/>
+						<text text-anchor="middle" alignment-baseline="central" fill="white">π</text>
+					</svg>
+					<h3>It's complicated</h3>
+					<p>
+						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
+					</p>
+					<aside class="notes">
+						Although, we don't really need that, even...
+					</aside>
+				</section>
+				<section>
+					<svg width="200" height="200" viewBox="-30 -30 60 60">
+						<circle cx="0" cy="0" r="30"/>
+					</svg>
+					<h3>It's complicated</h3>
+					<p>
+						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What do we know about π?</h2>
+
+					<ul class="fragment">
+						<li>It has to do with circles<span class="fragment"> - something something 2πr</span></li>
+						<li class="fragment">It tastes delicious</li>
+						<li class="fragment">It's infinite</li>
+						<li class="fragment">It goes on forever</li>
+						<li class="fragment">It has infinitely many decimal digits</li>
+						<li class="fragment">It's random</li>
+                        <li class="fragment">There's no pattern to its digits</li>
+					</ul>
+					<aside class="notes">
+						You could make a good case for the answer to any of these being "no".
 					</aside>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<h1>How to calculate π</h1>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+					<h2>Measure a circle</h2>
+                    <style type="text/css">
+                        .draw-circumference {
+                            stroke-dasharray: 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 0 280;
+                            stroke-dashoffset: 280;
+                        }
+                        .draw-diameter {
+                            stroke-dasharray: 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 0 82;
+                            stroke-dashoffset: 82;
+                        }
+                        .draw-diameter.go, .draw-circumference.go {
+                            animation: draw 15s infinite ease-in-out;
+                        }
+                        @keyframes draw {
+                            85% {
+                                stroke-dashoffset: 0;
+                                opacity: 1;
+                            }
+                            90% {
+                                opacity: 1;
+                            }
+                            95% {
+                                stroke-dashoffset: 0;
+                                opacity: 0;
+                            }
+                            100% {
+                                stroke-dashoffset: 0;
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+					<svg width="560" height="400" viewBox="-70 -50 140 100">
+						<circle r="40"/>
+                        <path class="animated draw-circumference" d="M 44.5 0 a 44.5 44.5 0 0 1 -89 0 a 44.5 44.5 0 0 1 89 0" stroke="black" fill="none"/>
+                        <line class="animated draw-diameter" x1=40.1 y1=0 x2=-40.1 y2=0 stroke="white"/>
+						<text class="text-circumference" x="0" y="-10" fill="white" text-anchor="middle" font-size="10">π = c/d</text>
+					</svg>
+                </section>
+                <section>
+                    <h2>Measure a pendulum's swing</h2>
+                    <p>\[ \pi = \frac{T}{2} \sqrt{\frac{L}{g}} \] </p>
+                    <style type="text/css">
+                        .pendulum.go {
+                            animation: swing 5s infinite cubic-bezier(0.5, 0, 0.5, 1);;
+                        }
+                        @keyframes swing {
+                            50% {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    </style>
+                    <svg width="700" height="350" viewBox="-100 -10 200 100">
+                        <g class="animated pendulum">
+                            <line x1=0 y1=0 x2=80 y2=0 stroke="black"/>
+                            <circle cx=80 cy=0 r="5" />
+                        </g>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
+                    </svg>
+                </section>
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+                    <h2>Draw a polygon which looks like a circle</h2>
+                    <p style="position: absolute; top: 100">\[ P_{2n} = \frac{2p_nP_n}{p_n+P_n}, \\[1.5em] p_{2n} = \sqrt{p_nP_{2n}} \]</p>
+                    <style type="text/css">
+                        .polygon-diagram .vertex {
+                            r: 1;
+                        }
+                        .polygon-diagram path {
+                            stroke-width: 0.2;
+                            stroke: black;
+                            fill: none;
+                        }
+                        .polygon-diagram.polygon-12 .hexagon {
+                            opacity: 0.3;
+                            transition: opacity 0.3s;
+                        }
+                    </style>
+                    <svg width="700" height="550" viewBox="-80 -50 130 100">
+                        <g class="polygon-diagram">
+                            <circle cx="0" cy="0" r="40" stroke-width="0.2" fill="none" stroke="#555" />
+                            <g class="fragment">
+                                <circle class="vertex" cx="0" cy="40" />
+                                <circle class="vertex" cx="34.64101615137754" cy="20.000000000000004" />
+                                <circle class="vertex" cx="34.64101615137755" cy="-19.999999999999993" />
+                                <circle class="vertex" cx="0" cy="-40" />
+                                <circle class="vertex" cx="-34.641016151377535" cy="-20.000000000000018" />
+                                <circle class="vertex" cx="-34.64101615137754" cy="20.000000000000004" />
+                            </g>
 
+                            <g class="fragment">
+                                <g class="hexagon">
+                                    <path class="edge" d="M 0 40 L 34.64101615137754 20.000000000000004 L 34.64101615137755 -19.999999999999993 L 0 -40 L -34.641016151377535 -20.000000000000018 L -34.64101615137754 20.000000000000004 z"/>
+                                    <circle class="fragment" cx="0" cy="0" r="34.64" stroke-width="0.2" fill="none" stroke="#555" />
+                                </g>
+                            </g>
+                            <g class="fragment">
+                                <circle class="vertex" cx="19.999999999999996" cy="34.64101615137755" />
+                                <circle class="vertex" cx="40" cy="0" />
+                                <circle class="vertex" cx="19.999999999999996" cy="-34.64101615137755" />
+                                <circle class="vertex" cx="-19.99999999999999" cy="-34.641016151377556" />
+                                <circle class="vertex" cx="-40" cy="0" />
+                                <circle class="vertex" cx="-20.000000000000018" cy="34.641016151377535" />
+                            </g>
+                            <g class="fragment" data-state="polygon-12">
+                                <path class="edge" d="M 0 40 L 19.999999999999996 34.64101615137755 L 34.64101615137754 20.000000000000004 L 40 0 L 34.64101615137755 -19.999999999999993 L 19.999999999999996 -34.64101615137755 L 0 -40 L -19.99999999999999 -34.641016151377556 L -34.641016151377535 -20.000000000000018 L -40 0 L -34.64101615137754 20.000000000000004 L -20.000000000000018 34.641016151377535 z"/>
+                            </g>
+                            <circle class="fragment" cx="0" cy="0" r="38.63" stroke-width="0.2" fill="none" stroke="#555" />
+                        </g>
+                    </svg>
+                    <aside class="notes">
+                        You can easily work out the perimeter of a circle inscribed in a hexagon.
+                        Archimedes, among others, noticed that you can get a better approximation by doubling the number of points - it's still easy to work out the perimeters of inscribed and circumscribed circles.
+                    </aside>
+                </section>
+                <section>
+                    <style type="text/css">
+                        #square {
+                            width: 500px;
+                            opacity: 0.5;
+                            top: 1em;
+                            left: 1em;
+                            transition: margin-top 0.5s;
+                            border: 1px solid #555;
+                        }
+                        .square-in {
+                            color: hsl(240,45%,50%);
+                        }
+                    </style>
+                    <p class="square-in">\[ x^2 + y^2 \leq 1 \]</p>
+                    <canvas id="square"></canvas>
+                    <div id="square-approximation">π ≈ 4 × <span class="square-in numerator">0</span> / <span class="denominator">0</span> ≈ <span class="decimal">?</span></div>
+
+                    <aside class="notes">
+                    </aside>
+                </section>
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+                    <h2>Give up and legislate it</h2>
+                    <blockquote>"the ratio of the diameter and circumference is as five-fourths to four."</blockquote>
+                    <img src="images/indiana_pi_cartoon.jpg" width="300">
+                    <aside class="notes">
+                        In January 1897, Edward J. Goodwin managed to get a bill before the Indiana General Assembly which would establish a very incorrect value for π. 
+                        It was passed by the General Assembly but was laughed out of the Senate.
+                    </aside>
 				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+                <section>
+                    <h2>Machin's formula</h2>
+                    <p>\[ \frac{\pi}{4} = 4 \arctan \left(\frac{1}{5}\right) - \arctan \left(\frac{1}{239}\right) \]</p>
+                    <aside class="notes">
+                        John Machin came up with this formula in 1706, derived from angle addition formulae.
+                    </aside>
 				</section>
-
+				<section>
+                    <h2>William Shanks, Local Hero</h2>
+                    <p class="fragment">William Shanks spent over 20 years calculating π to 707 decimal places.</p>
+                    <p class="hidden">But he made an error at the 528th digit.</p>
+                    <img class="fragment" src="images/shanks_pi.png" width="500">
+				</section>
+				<section>
+                    <h2>William Shanks, Local Hero</h2>
+                    <p>William Shanks spent over 20 years calculating π to 707 decimal places.</p>
+                    <p>But he made an error at the 528th digit.</p>
+                    <img src="images/shanks_pi.png" width="500">
+				</section>
+				<section>
+                    <h2>William Shanks, Local Hero</h2>
+                    <p>William Shanks spent over 20 years calculating π to 707 decimal places.</p>
+                    <p>But he made an error at the 528th digit.</p>
+                    <img src="images/shanks_pi_fixed.png" width="500">
+				</section>
+				<section>
+                    <h2>Use a machine</h2>
+                    <p>D.F. Ferguson spotted Shanks's error and broke his record with a mechanical desk calculator.</p>
+                    <p>Since then, computers have gone on to compute a stupid number of decimal places of π.</p>
+				</section>
+                <section>
+                    <img src="images/record_pi_approximations.svg" width="700">
+                    <p style="margin-top: 0;font-size: 0.5em">(<a href="https://en.wikipedia.org/wiki/File:Record_pi_approximations.svg">Image by Wikipedia user Nageh</a>)</p>
+                    <div class="fragment">
+                        <p>We know 13 trillion digits. Surely that's enough.</p>
+                        <p>Now what?</p>
+                    </div>
+                    <aside class="notes">
+                        Quantum limit for measurable π celebration at 53 digits.
+                        Enough to compute the radius of the observable universe in Planck lengths at 61 digits.
+                    </aside>
+				</section>
+                <section>
+                    <h2>Spigot algorithms</h2>
+                    <p>Iterative algorithms which produce digits one at a time, and never reuse a digit in a later step.</p>
+                    <p class="fragment">And they only use a constant amount of working memory.</p>
+                    <img class="fragment" src="images/bill_ted_whoa.gif" width="600">
+                    <aside class="notes">
+                        Starting with Rabinovitz and Wagon, who came up with a bounded algorithm - you commit to the number of digits you want in advance - then followed up by unbounded versions.
+                    </aside>
+				</section>
+				<section>
+					(A bit like <a href="http://alpha61.com/primenumbershittingbear/">this bear</a>, but for digits of π)
+				</section>
+                <section>
+                    <p>So I bought</p>
+                    <p><a href="http://three.onefouronefivenine.com">three.onefouronefivenine.com</a></p>
+                    <aside class="notes">
+                        Scroll down to the Feynman point at 762 digits - six 9s in a row
+                    </aside>
+				</section>
+				<section>
+                    <h2>The Bailey-Borwein-Plouffe formula</h2>
+                    <p>\[ \pi = \sum_{k=0}^{\infty} \frac{1}{16^k}\left( \frac{4}{8k+1} - \frac{2}{8k+4} - \frac{1}{8k+5} - \frac{1}{8k+6} \right) \]</p>
+                    <p class="fragment">You can extract <em>any</em> digit of π without working out any of the previous ones.</p>
+				</section>
+				<section>
+					<img src="images/tim-and-eric-mind-blown.gif" width="600">
+				</section>
+				<section>
+                    <h2>That's it!</h2>
+					<svg width="560" height="400" viewBox="-70 -50 140 100">
+						<circle r="40"/>
+                        <path class="animated draw-circumference" d="M 44.5 0 a 44.5 44.5 0 0 1 -89 0 a 44.5 44.5 0 0 1 89 0" stroke="black" fill="none"/>
+                        <line class="animated draw-diameter" x1=40.1 y1=0 x2=-40.1 y2=0 stroke="white"/>
+						<text class="text-circumference" x="0" y="-10" fill="white" text-anchor="middle" font-size="10">π = c/d</text>
+					</svg>
+                    <footer>
+                        <p>
+                            <a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)
+                        </p>
+                        <p><a href="http://aperiodical.com">The Aperiodical - aperiodical.com</a></p>
+                    </footer>
+				</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -388,11 +353,11 @@ Reveal.addEventListener( 'customevent', function() {
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
-				progress: true,
+				progress: false,
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'none', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -403,7 +368,96 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
-			});
+            });
+
+            function start_animations() {
+                var slide = Reveal.getCurrentSlide();
+                var animated = slide.querySelectorAll('.animated');
+                for(var i=0;i<animated.length;i++) {
+                    animated[i].classList.add('go');
+                }
+                var old_slide = Reveal.getPreviousSlide();
+                if(old_slide) {
+                    var animated = old_slide.querySelectorAll('.animated');
+                    for(var i=0;i<animated.length;i++) {
+                        animated[i].classList.remove('go');
+                    }
+                }
+            }
+
+            Reveal.addEventListener('slidechanged',start_animations);
+            start_animations();
+
+            Reveal.addEventListener('fragmentshown',function(e) {
+                if(e.fragment.getAttribute('data-state')=='polygon-12') {
+                    Reveal.getCurrentSlide().querySelector('.polygon-diagram').classList.add('polygon-12');
+                }
+            });
+            Reveal.addEventListener('fragmenthidden',function(e) {
+                if(e.fragment.getAttribute('data-state')=='polygon-12') {
+                    Reveal.getCurrentSlide().querySelector('.polygon-diagram').classList.remove('polygon-12');
+                }
+            });
+
+            function show_pi_progress() {
+                var p = Reveal.getProgress();
+                document.getElementById('pi-progress').style['max-width'] = (100*p)+'%';
+            }
+            Reveal.addEventListener('fragmentshown',show_pi_progress);
+            Reveal.addEventListener('fragmenthidden',show_pi_progress);
+            Reveal.addEventListener('slidechanged',show_pi_progress);
+            show_pi_progress();
+
+
+
+        var canvas = document.getElementById('square');
+        var context = canvas.getContext('2d');
+        canvas.width = 500;
+        canvas.height = 500;
+
+        context.fillRect(0,0,1,1);
+
+        var total = 0;
+        var num_in = 0;
+
+        var pos = 0;
+
+        function point() {
+            for(var i=0;i<5;i++) {
+                var x = Math.random();
+                var y = Math.random();
+                total += 1;
+                var point_in = x*x+y*y<=1;
+                num_in += point_in;
+                var hue = point_in ? 240 : 0;
+                var sat = Math.random()*30+30;
+                context.fillStyle = 'hsla('+hue+','+sat+'%,50%,0.9)'
+                context.fillRect(canvas.width*x-2,canvas.height*(1-y)-2,5,5);
+
+                var approx = 4*num_in/total;
+                var int_approx = Math.floor(approx);
+                var pow = 1e10;
+                var decimal_approx = Math.floor((pow*approx)%pow)+'';
+                while(decimal_approx.length<10) {
+                    decimal_approx = '0'+decimal_approx;
+                }
+                var approx_element = document.getElementById('square-approximation');
+                approx_element.querySelector('.numerator').innerHTML = num_in;
+                approx_element.querySelector('.denominator').innerHTML = total;
+                approx_element.querySelector('.decimal').innerHTML = int_approx+'.'+decimal_approx;
+
+                var d = 1;
+                var places = 0;
+                while(Math.floor(Math.PI*d)==Math.floor(approx*d)) {
+                    d *= 10;
+                    places += 1;
+                }
+            }
+        }
+
+        canvas.addEventListener('click',function() {
+            setInterval(point,50);
+        });
 
 		</script>
 
