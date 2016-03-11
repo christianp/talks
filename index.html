@@ -103,6 +103,8 @@
 						<li class="fragment">It has infinitely many decimal digits</li>
 						<li class="fragment">It's random</li>
                         <li class="fragment">There's no pattern to its digits</li>
+                        <li class="fragment">It's irrational</li>
+                        <li class="fragment">It's transcendental</li>
 					</ul>
 					<aside class="notes">
 						You could make a good case for the answer to any of these being "no".
@@ -173,8 +175,30 @@
 
                     </svg>
                 </section>
+                <section>
+                    <h2>Embrace the noise</h2>
+                    <style type="text/css">
+                        #square {
+                            width: 400px;
+                            opacity: 0.5;
+                            top: 1em;
+                            left: 1em;
+                            transition: margin-top 0.5s;
+                            border: 1px solid #555;
+                        }
+                        .square-in {
+                            color: hsl(240,45%,50%);
+                        }
+                    </style>
+                    <p class="square-in">\[ x^2 + y^2 \leq 1 \]</p>
+                    <canvas id="square"></canvas>
+                    <div id="square-approximation">π ≈ 4 × <span class="square-in numerator">0</span> / <span class="denominator">0</span> ≈ <span class="decimal">?</span></div>
+
+                    <aside class="notes">
+                    </aside>
+                </section>
 				<section>
-                    <h2>Draw a polygon which looks like a circle</h2>
+                    <h3>Draw a polygon which looks like a circle</h3>
                     <p style="position: absolute; top: 100">\[ P_{2n} = \frac{2p_nP_n}{p_n+P_n}, \\[1.5em] p_{2n} = \sqrt{p_nP_{2n}} \]</p>
                     <style type="text/css">
                         .polygon-diagram .vertex {
@@ -227,27 +251,6 @@
                         Archimedes, among others, noticed that you can get a better approximation by doubling the number of points - it's still easy to work out the perimeters of inscribed and circumscribed circles.
                     </aside>
                 </section>
-                <section>
-                    <style type="text/css">
-                        #square {
-                            width: 500px;
-                            opacity: 0.5;
-                            top: 1em;
-                            left: 1em;
-                            transition: margin-top 0.5s;
-                            border: 1px solid #555;
-                        }
-                        .square-in {
-                            color: hsl(240,45%,50%);
-                        }
-                    </style>
-                    <p class="square-in">\[ x^2 + y^2 \leq 1 \]</p>
-                    <canvas id="square"></canvas>
-                    <div id="square-approximation">π ≈ 4 × <span class="square-in numerator">0</span> / <span class="denominator">0</span> ≈ <span class="decimal">?</span></div>
-
-                    <aside class="notes">
-                    </aside>
-                </section>
 				<section>
                     <h2>Give up and legislate it</h2>
                     <blockquote>"the ratio of the diameter and circumference is as five-fourths to four."</blockquote>
@@ -260,8 +263,13 @@
                 <section>
                     <h2>Machin's formula</h2>
                     <p>\[ \frac{\pi}{4} = 4 \arctan \left(\frac{1}{5}\right) - \arctan \left(\frac{1}{239}\right) \]</p>
+                    <div class="fragment">
+                        <p>Rewrite as an infinite series</p>
+                        <p>\[ \pi = 4 \sum_{n=0}^{\infty} \frac{(-1)^n)}{2n+1} \left( 4 \left(\frac{1}{5}\right)^{2n+1} - \left(\frac{1}{239}\right)^{2n+1} \right) \]</p>
+                    </div>
                     <aside class="notes">
                         John Machin came up with this formula in 1706, derived from angle addition formulae.
+                        Using infinite series approximations, you can get closer and closer to π using only arithmetic.
                     </aside>
 				</section>
 				<section>
@@ -300,6 +308,10 @@
                     </aside>
 				</section>
                 <section>
+                    <h1>Spigot algorithms</h1>
+                    <p class="fragment">(A bit like <a href="http://alpha61.com/primenumbershittingbear/">this bear</a>, but for digits of π)</p>
+                </section>
+                <section>
                     <h2>Spigot algorithms</h2>
                     <p>Iterative algorithms which produce digits one at a time, and never reuse a digit in a later step.</p>
                     <p class="fragment">And they only use a constant amount of working memory.</p>
@@ -307,9 +319,6 @@
                     <aside class="notes">
                         Starting with Rabinovitz and Wagon, who came up with a bounded algorithm - you commit to the number of digits you want in advance - then followed up by unbounded versions.
                     </aside>
-				</section>
-				<section>
-					(A bit like <a href="http://alpha61.com/primenumbershittingbear/">this bear</a>, but for digits of π)
 				</section>
                 <section>
                     <p>So I bought</p>
@@ -401,7 +410,7 @@
 
             function show_pi_progress() {
                 var p = Reveal.getProgress();
-                document.getElementById('pi-progress').style['max-width'] = (100*p)+'%';
+                document.getElementById('pi-progress').style['max-width'] = (95*p+5)+'%';
             }
             Reveal.addEventListener('fragmentshown',show_pi_progress);
             Reveal.addEventListener('fragmenthidden',show_pi_progress);
@@ -423,7 +432,7 @@
         var pos = 0;
 
         function point() {
-            for(var i=0;i<5;i++) {
+            for(var i=0;i<7;i++) {
                 var x = Math.random();
                 var y = Math.random();
                 total += 1;
