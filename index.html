@@ -204,17 +204,23 @@
                         .polygon-diagram .vertex {
                             r: 1;
                         }
+                        .polygon-diagram .edge {
+                            stroke: #888;
+                        }
                         .polygon-diagram path {
                             stroke-width: 0.2;
                             stroke: black;
                             fill: none;
                         }
                         .polygon-diagram.polygon-12 .hexagon {
-                            opacity: 0.3;
+                            opacity: 0.2;
                             transition: opacity 0.3s;
                         }
+                        .polygon-diagram.polygon-12 .vertex {
+                            r: 0.3;
+                        }
                     </style>
-                    <svg width="700" height="550" viewBox="-80 -50 130 100">
+                    <svg width="700" height="550" viewBox="-76 -46 122 92">
                         <g class="polygon-diagram">
                             <circle cx="0" cy="0" r="40" stroke-width="0.2" fill="none" stroke="#555" />
                             <g class="fragment">
@@ -226,13 +232,21 @@
                                 <circle class="vertex" cx="-34.64101615137754" cy="20.000000000000004" />
                             </g>
 
-                            <g class="fragment">
-                                <g class="hexagon">
+                            <g class="hexagon">
+                                <g class="fragment">
                                     <path class="edge" d="M 0 40 L 34.64101615137754 20.000000000000004 L 34.64101615137755 -19.999999999999993 L 0 -40 L -34.641016151377535 -20.000000000000018 L -34.64101615137754 20.000000000000004 z"/>
-                                    <circle class="fragment" cx="0" cy="0" r="34.64" stroke-width="0.2" fill="none" stroke="#555" />
+                                </g>
+                                <g class="fragment">
+                                    <circle class="vertex" cx="0" cy="46.18802153517006" />
+                                    <circle class="vertex" cx="39.99999999999999" cy="23.094010767585033" />
+                                    <circle class="vertex" cx="40" cy="-23.09401076758502" />
+                                    <circle class="vertex" cx="5.656401273199503e-15" cy="-46.18802153517006" />
+                                    <circle class="vertex" cx="-39.999999999999986" cy="-23.09401076758505" />
+                                    <circle class="vertex" cx="-39.99999999999999" cy="23.094010767585033" />
+                                    <path class="edge" d="M 0 46.18802153517006 L 39.99999999999999 23.094010767585033 L 40 -23.09401076758502 L 5.656401273199503e-15 -46.18802153517006 L -39.999999999999986 -23.09401076758505 L -39.99999999999999 23.094010767585033 z" />
                                 </g>
                             </g>
-                            <g class="fragment">
+                            <g class="fragment" data-state="polygon-12">
                                 <circle class="vertex" cx="19.999999999999996" cy="34.64101615137755" />
                                 <circle class="vertex" cx="40" cy="0" />
                                 <circle class="vertex" cx="19.999999999999996" cy="-34.64101615137755" />
@@ -240,10 +254,12 @@
                                 <circle class="vertex" cx="-40" cy="0" />
                                 <circle class="vertex" cx="-20.000000000000018" cy="34.641016151377535" />
                             </g>
-                            <g class="fragment" data-state="polygon-12">
+                            <g class="fragment">
                                 <path class="edge" d="M 0 40 L 19.999999999999996 34.64101615137755 L 34.64101615137754 20.000000000000004 L 40 0 L 34.64101615137755 -19.999999999999993 L 19.999999999999996 -34.64101615137755 L 0 -40 L -19.99999999999999 -34.641016151377556 L -34.641016151377535 -20.000000000000018 L -40 0 L -34.64101615137754 20.000000000000004 L -20.000000000000018 34.641016151377535 z"/>
                             </g>
-                            <circle class="fragment" cx="0" cy="0" r="38.63" stroke-width="0.2" fill="none" stroke="#555" />
+                            <g class="fragment">
+                                <path class="edge" d="M 0 41.41104721640332 L 20.705523608201656 35.86301888672214 L 35.86301888672214 20.705523608201663 L 41.41104721640332 2.5356953211454117e-15 L 35.86301888672214 -20.70552360820165 L 20.705523608201656 -35.86301888672214 L 5.071390642290823e-15 -41.41104721640332 L -20.70552360820165 -35.863018886722145 L -35.863018886722124 -20.705523608201677 L -41.41104721640332 -7.607085963436235e-15 L -35.86301888672214 20.705523608201663 L -20.705523608201677 35.863018886722124 z" />
+                            </g>
                         </g>
                     </svg>
                     <aside class="notes">
@@ -296,15 +312,13 @@
                     <p>Since then, computers have gone on to compute a stupid number of decimal places of π.</p>
 				</section>
                 <section>
-                    <img src="images/record_pi_approximations.svg" width="700">
+                    <img src="images/record_pi_approximations.svg" width="900">
                     <p style="margin-top: 0;font-size: 0.5em">(<a href="https://en.wikipedia.org/wiki/File:Record_pi_approximations.svg">Image by Wikipedia user Nageh</a>)</p>
-                    <div class="fragment">
-                        <p>We know 13 trillion digits. Surely that's enough.</p>
-                        <p>Now what?</p>
-                    </div>
                     <aside class="notes">
                         Quantum limit for measurable π celebration at 53 digits.
                         Enough to compute the radius of the observable universe in Planck lengths at 61 digits.
+                        We know 13 trillion digits. Surely that's enough.
+                        Now what?
                     </aside>
 				</section>
                 <section>
