@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="happy-numbers.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="579.56935"
+     inkscape:cy="308.98725"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3336"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'CMU Bright';font-style:normal;font-weight:500;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"><flowRegion
+         id="flowRegion3338"><rect
+           id="rect3340"
+           width="894.28571"
+           height="94.285713"
+           x="71.428574"
+           y="61.237339"
+           style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara3342" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3344"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'CMU Bright';font-style:normal;font-weight:500;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"><flowRegion
+         id="flowRegion3346"><rect
+           id="rect3348"
+           width="640"
+           height="131.42857"
+           x="125.71429"
+           y="78.380196"
+           style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara3350" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3352"
+       style="font-style:normal;font-weight:500;font-size:40px;line-height:125%;font-family:'CMU Bright';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"
+       transform="translate(0,308.26772)"><flowRegion
+         id="flowRegion3354"><rect
+           id="rect3356"
+           width="134.28572"
+           height="42.857143"
+           x="328.57144"
+           y="115.52306"
+           style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara3358">thththtthththt</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="124.39087"
+       y="416.47113"
+       id="text3360"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3362"
+         x="124.39087"
+         y="416.47113"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:90px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium'">The happy numbers</tspan></text>
+    <rect
+       style="fill:#cccccc"
+       id="rect3372"
+       width="929.34033"
+       height="175.76654"
+       x="61.510937"
+       y="478.55756" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3364"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(47.833993,318.93422)"><flowRegion
+         id="flowRegion3366"><rect
+           id="rect3368"
+           width="969.74646"
+           height="307.08636"
+           x="46.467018"
+           y="174.36845"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium'" /></flowRegion><flowPara
+         id="flowPara3370">1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 49,</flowPara><flowPara
+         id="flowPara4142">68, 70, 79, 82, 86, 91, 94, 97, 100, 103, </flowPara><flowPara
+         id="flowPara4144">109, 129, 130, 133, 139, 167, 176, 188, …</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3374"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'CMU Bright';font-style:normal;font-weight:500;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"><flowRegion
+         id="flowRegion3376"><rect
+           id="rect3378"
+           width="919.23883"
+           height="278.80209"
+           x="48.487324"
+           y="376.39896"
+           style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara3380" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3382"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'CMU Bright';font-style:normal;font-weight:500;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"><flowRegion
+         id="flowRegion3384"><rect
+           id="rect3386"
+           width="913.17792"
+           height="202.0305"
+           x="40.406101"
+           y="396.60202"
+           style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara3388" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="55.351025"
+       y="731.77112"
+       id="text3390"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3392"
+         x="55.351025"
+         y="731.77112"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium Oblique'">Add up the squares of each of the digits of <tspan
+   style="font-style:italic"
+   id="tspan4155">n</tspan>.</tspan><tspan
+         sodipodi:role="line"
+         x="55.351025"
+         y="781.77112"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium Oblique'"
+         id="tspan4153">If repeatedly doing this eventually reaches 1, <tspan
+   style="font-style:italic"
+   id="tspan4157">n</tspan> is happy.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="55.311962"
+       y="859.14301"
+       id="text3398"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3400"
+         x="55.311962"
+         y="859.14301"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Bold'">Example: </tspan><tspan
+         sodipodi:role="line"
+         x="55.311962"
+         y="910.3927"
+         id="tspan3410"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Bold'">19 → 82 → 68 → 100 → 1, so 19 is happy.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="55.548779"
+       y="991.75305"
+       id="text3419"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="55.548779"
+         y="991.75305"
+         id="tspan3423"
+         style="font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium Oblique'"><tspan
+   style="font-style:normal"
+   id="tspan4163">Numbers which never reach 1 are called</tspan> unhappy <tspan
+   style="font-style:normal"
+   id="tspan4161">☹</tspan></tspan></text>
+  </g>
+</svg>

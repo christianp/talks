@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>π</title>
+		<title>Integer Sequences</title>
 
 		<meta name="description" content="A talk about π for π Day">
 		<meta name="author" content="Christian Lawson-Perfect">
@@ -36,348 +36,249 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
+        <style>
+            .reveal table tbody th {
+                text-align: right;
+            }
+            .reveal table tbody tr:last-child th {
+                border-bottom: none;
+            }
+            .reveal table {
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+        </style>
+
 	</head>
 
 	<body>
 
         <div class="reveal">
-            <style type="text/css">
-                #pi-progress {
-                    opacity: 0.3;
-                    font-size: 0.7em;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    max-height: 1em;
-                    word-break: break-all;
-                    overflow-y: hidden;
-                    max-width: 100%;
-                }
-            </style>
-            <div id="pi-progress">π = 3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631...</div>
             <div class="slides">
 				<section>
-					<svg width="200" height="200" viewBox="-30 -30 60 60">
-						<circle cx="0" cy="0" r="30"/>
-						<text text-anchor="middle" alignment-baseline="central" fill="white">Pi</text>
-					</svg>
-					<h3>It's complicated</h3>
-					<p>
-						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
-					</p>
-					<aside class="notes">
-						Here's π. Or, it should really be written like this...
-					</aside>
-				</section>
-				<section>
-					<svg width="200" height="200" viewBox="-30 -30 60 60">
-						<circle cx="0" cy="0" r="30"/>
-						<text text-anchor="middle" alignment-baseline="central" fill="white">π</text>
-					</svg>
-					<h3>It's complicated</h3>
-					<p>
-						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
-					</p>
-					<aside class="notes">
-						Although, we don't really need that, even...
-					</aside>
-				</section>
-				<section>
-					<svg width="200" height="200" viewBox="-30 -30 60 60">
-						<circle cx="0" cy="0" r="30"/>
-					</svg>
-					<h3>It's complicated</h3>
-					<p>
-						<small><a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)</small>
-					</p>
-				</section>
+                    <h1>Integer sequences</h1>
 
-				<section>
-					<h2>What do we know about π?</h2>
-
-					<ul class="fragment">
-						<li>It has to do with circles<span class="fragment"> - something something 2πr</span></li>
-						<li class="fragment">It tastes delicious</li>
-						<li class="fragment">It's infinite</li>
-						<li class="fragment">It goes on forever</li>
-						<li class="fragment">It has infinitely many decimal digits</li>
-						<li class="fragment">It's random</li>
-                        <li class="fragment">There's no pattern to its digits</li>
-                        <li class="fragment">It's irrational</li>
-                        <li class="fragment">It's transcendental</li>
-					</ul>
-					<aside class="notes">
-						You could make a good case for the answer to any of these being "no".
-					</aside>
-				</section>
-
-				<section>
-					<h1>How to calculate π</h1>
-				</section>
-
-				<section>
-					<h2>Measure a circle</h2>
-                    <style type="text/css">
-                        .draw-circumference {
-                            stroke-dasharray: 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 0 280;
-                            stroke-dashoffset: 280;
-                        }
-                        .draw-diameter {
-                            stroke-dasharray: 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 5 2 0 82;
-                            stroke-dashoffset: 82;
-                        }
-                        .draw-diameter.go, .draw-circumference.go {
-                            animation: draw 15s infinite ease-in-out;
-                        }
-                        @keyframes draw {
-                            85% {
-                                stroke-dashoffset: 0;
-                                opacity: 1;
-                            }
-                            90% {
-                                opacity: 1;
-                            }
-                            95% {
-                                stroke-dashoffset: 0;
-                                opacity: 0;
-                            }
-                            100% {
-                                stroke-dashoffset: 0;
-                                opacity: 0;
-                            }
-                        }
-                    </style>
-					<svg width="560" height="400" viewBox="-70 -50 140 100">
-						<circle r="40"/>
-                        <path class="animated draw-circumference" d="M 44.5 0 a 44.5 44.5 0 0 1 -89 0 a 44.5 44.5 0 0 1 89 0" stroke="black" fill="none"/>
-                        <line class="animated draw-diameter" x1=40.1 y1=0 x2=-40.1 y2=0 stroke="white"/>
-						<text class="text-circumference" x="0" y="-10" fill="white" text-anchor="middle" font-size="10">π = c/d</text>
-					</svg>
-                </section>
-                <section>
-                    <img src="images/great-circle-earthworks.jpg">
-                    <aside class="notes">
-                        Last Saturday, a group led by Niles Johnson of Ohio State University measured the Great Circle Earthworks in Heath, Ohio, and got a value for π of 3.1475, which is only 0.2% off the real value.
-                    </aside>
-                </section>
-                <section>
-                    <h2>Measure a pendulum's swing</h2>
-                    <p>\[ \pi = \frac{T}{2} \sqrt{\frac{L}{g}} \] </p>
-                    <style type="text/css">
-                        .pendulum.go {
-                            animation: swing 5s infinite cubic-bezier(0.5, 0, 0.5, 1);;
-                        }
-                        @keyframes swing {
-                            50% {
-                                transform: rotate(180deg);
-                            }
-                        }
-                    </style>
-                    <svg width="700" height="350" viewBox="-100 -10 200 100">
-                        <g class="animated pendulum">
-                            <line x1=0 y1=0 x2=80 y2=0 stroke="black"/>
-                            <circle cx=80 cy=0 r="5" />
-                        </g>
-
-                    </svg>
-                    <aside class="notes">
-                        The <em>isochronic</em> property of pendulums was discovered by Galileo.
-                    </aside>
-                </section>
-                <section>
-                    <h2>Embrace the noise</h2>
-                    <style type="text/css">
-                        #square {
-                            width: 400px;
-                            opacity: 0.5;
-                            top: 1em;
-                            left: 1em;
-                            transition: margin-top 0.5s;
-                            border: 1px solid #555;
-                        }
-                        .square-in {
-                            color: hsl(240,45%,50%);
-                        }
-                    </style>
-                    <p class="square-in">\[ x^2 + y^2 \leq 1 \]</p>
-                    <canvas id="square"></canvas>
-                    <div id="square-approximation">π ≈ 4 × <span class="square-in numerator">0</span> / <span class="denominator">0</span> ≈ <span class="decimal">?</span></div>
-
-                    <aside class="notes">
-                    </aside>
-                </section>
-				<section>
-                    <h3>Draw a polygon which looks like a circle</h3>
-                    <p style="position: absolute; top: 100">\[ P_{2n} = \frac{2p_nP_n}{p_n+P_n}, \\[1.5em] p_{2n} = \sqrt{p_nP_{2n}} \]</p>
-                    <style type="text/css">
-                        .polygon-diagram .vertex {
-                            r: 1;
-                        }
-                        .polygon-diagram .edge {
-                            stroke: #888;
-                        }
-                        .polygon-diagram path {
-                            stroke-width: 0.2;
-                            stroke: black;
-                            fill: none;
-                        }
-                        .polygon-diagram.polygon-12 .hexagon {
-                            opacity: 0.2;
-                            transition: opacity 0.3s;
-                        }
-                        .polygon-diagram.polygon-12 .vertex {
-                            r: 0.3;
-                        }
-                    </style>
-                    <svg width="700" height="550" viewBox="-76 -46 122 92">
-                        <g class="polygon-diagram">
-                            <circle cx="0" cy="0" r="40" stroke-width="0.2" fill="none" stroke="#555" />
-                            <g class="fragment">
-                                <circle class="vertex" cx="0" cy="40" />
-                                <circle class="vertex" cx="34.64101615137754" cy="20.000000000000004" />
-                                <circle class="vertex" cx="34.64101615137755" cy="-19.999999999999993" />
-                                <circle class="vertex" cx="0" cy="-40" />
-                                <circle class="vertex" cx="-34.641016151377535" cy="-20.000000000000018" />
-                                <circle class="vertex" cx="-34.64101615137754" cy="20.000000000000004" />
-                            </g>
-
-                            <g class="hexagon">
-                                <g class="fragment">
-                                    <path class="edge" d="M 0 40 L 34.64101615137754 20.000000000000004 L 34.64101615137755 -19.999999999999993 L 0 -40 L -34.641016151377535 -20.000000000000018 L -34.64101615137754 20.000000000000004 z"/>
-                                </g>
-                                <g class="fragment">
-                                    <circle class="vertex" cx="0" cy="46.18802153517006" />
-                                    <circle class="vertex" cx="39.99999999999999" cy="23.094010767585033" />
-                                    <circle class="vertex" cx="40" cy="-23.09401076758502" />
-                                    <circle class="vertex" cx="5.656401273199503e-15" cy="-46.18802153517006" />
-                                    <circle class="vertex" cx="-39.999999999999986" cy="-23.09401076758505" />
-                                    <circle class="vertex" cx="-39.99999999999999" cy="23.094010767585033" />
-                                    <path class="edge" d="M 0 46.18802153517006 L 39.99999999999999 23.094010767585033 L 40 -23.09401076758502 L 5.656401273199503e-15 -46.18802153517006 L -39.999999999999986 -23.09401076758505 L -39.99999999999999 23.094010767585033 z" />
-                                </g>
-                            </g>
-                            <g class="fragment" data-state="polygon-12">
-                                <circle class="vertex" cx="19.999999999999996" cy="34.64101615137755" />
-                                <circle class="vertex" cx="40" cy="0" />
-                                <circle class="vertex" cx="19.999999999999996" cy="-34.64101615137755" />
-                                <circle class="vertex" cx="-19.99999999999999" cy="-34.641016151377556" />
-                                <circle class="vertex" cx="-40" cy="0" />
-                                <circle class="vertex" cx="-20.000000000000018" cy="34.641016151377535" />
-                            </g>
-                            <g class="fragment">
-                                <path class="edge" d="M 0 40 L 19.999999999999996 34.64101615137755 L 34.64101615137754 20.000000000000004 L 40 0 L 34.64101615137755 -19.999999999999993 L 19.999999999999996 -34.64101615137755 L 0 -40 L -19.99999999999999 -34.641016151377556 L -34.641016151377535 -20.000000000000018 L -40 0 L -34.64101615137754 20.000000000000004 L -20.000000000000018 34.641016151377535 z"/>
-                            </g>
-                            <g class="fragment">
-                                <path class="edge" d="M 0 41.41104721640332 L 20.705523608201656 35.86301888672214 L 35.86301888672214 20.705523608201663 L 41.41104721640332 2.5356953211454117e-15 L 35.86301888672214 -20.70552360820165 L 20.705523608201656 -35.86301888672214 L 5.071390642290823e-15 -41.41104721640332 L -20.70552360820165 -35.863018886722145 L -35.863018886722124 -20.705523608201677 L -41.41104721640332 -7.607085963436235e-15 L -35.86301888672214 20.705523608201663 L -20.705523608201677 35.863018886722124 z" />
-                            </g>
-                        </g>
-                    </svg>
-                    <aside class="notes">
-                        You can easily work out the perimeter of a circle inscribed in a hexagon.
-                        Archimedes, among others, noticed that you can get a better approximation by doubling the number of points - it's still easy to work out the perimeters of inscribed and circumscribed circles.
-                    </aside>
-                </section>
-				<section>
-                    <h2>Give up and legislate it</h2>
-                    <blockquote>"the ratio of the diameter and circumference is as five-fourths to four."</blockquote>
-                    <img src="images/indiana_pi_cartoon.jpg" width="300">
-                    <aside class="notes">
-                        In January 1897, Edward J. Goodwin managed to get a bill before the Indiana General Assembly which would establish a very incorrect value for π. 
-                        It was passed by the General Assembly but was laughed out of the Senate.
-                    </aside>
-				</section>
-                <section>
-                    <h2>Machin's formula</h2>
-                    <p>\[ \frac{\pi}{4} = 4 \arctan \left(\frac{1}{5}\right) - \arctan \left(\frac{1}{239}\right) \]</p>
-                    <div class="fragment">
-                        <p>Rewrite as an infinite series</p>
-                        <p>\[ \pi = 4 \sum_{n=0}^{\infty} \frac{(-1)^n)}{2n+1} \left( 4 \left(\frac{1}{5}\right)^{2n+1} - \left(\frac{1}{239}\right)^{2n+1} \right) \]</p>
-                    </div>
-                    <aside class="notes">
-                        John Machin came up with this formula in 1706, derived from angle addition formulae.
-                        Using infinite series approximations, you can get closer and closer to π using only arithmetic.
-                    </aside>
-				</section>
-				<section>
-                    <h2>William Shanks, Local Hero</h2>
-                    <p class="fragment">William Shanks spent over 20 years calculating π to 707 decimal places.</p>
-                    <p class="hidden">But he made an error at the 528th digit.</p>
-                    <img class="fragment" src="images/shanks_pi.png" width="500">
-				</section>
-				<section>
-                    <h2>William Shanks, Local Hero</h2>
-                    <p>William Shanks spent over 20 years calculating π to 707 decimal places.</p>
-                    <p>But he made an error at the 528th digit.</p>
-                    <img src="images/shanks_pi.png" width="500">
-				</section>
-				<section>
-                    <h2>William Shanks, Local Hero</h2>
-                    <p>William Shanks spent over 20 years calculating π to 707 decimal places.</p>
-                    <p>But he made an error at the 528th digit.</p>
-                    <img src="images/shanks_pi_fixed.png" width="500">
-				</section>
-				<section>
-                    <h2>Use a machine</h2>
-                    <p>D.F. Ferguson spotted Shanks's error and broke his record with a mechanical desk calculator.</p>
-                    <p>Since then, computers have gone on to compute a stupid number of decimal places of π.</p>
-				</section>
-                <section>
-                    <img src="images/record_pi_approximations.svg" width="900">
-                    <p style="margin-top: 0;font-size: 0.5em">(<a href="https://en.wikipedia.org/wiki/File:Record_pi_approximations.svg">Image by Wikipedia user Nageh</a>)</p>
-                    <aside class="notes">
-                        Quantum limit for measurable π celebration at 53 digits.
-                        Enough to compute the radius of the observable universe in Planck lengths at 61 digits.
-                        We know 13 trillion digits. Surely that's enough.
-                        Now what?
-                    </aside>
-				</section>
-                <section>
-                    <h1>Spigot algorithms</h1>
-                    <p class="fragment">(A bit like <a href="http://alpha61.com/primenumbershittingbear/">this bear</a>, but for digits of π)</p>
-                </section>
-                <section>
-                    <h2>Spigot algorithms</h2>
-                    <p>Iterative algorithms which produce digits one at a time, and never reuse a digit in a later step.</p>
-                    <p class="fragment">And they only use a constant amount of working memory.</p>
-                    <img class="fragment" src="images/bill_ted_whoa.gif" width="600">
-                    <aside class="notes">
-                        Starting with Rabinovitz and Wagon, who came up with a bounded algorithm - you commit to the number of digits you want in advance - then followed up by unbounded versions.
-                    </aside>
-				</section>
-                <section>
-                    <p>So I bought</p>
-                    <p><a href="http://three.onefouronefivenine.com">three.onefouronefivenine.com</a></p>
-                    <aside class="notes">
-                        Scroll down to the Feynman point at 762 digits - six 9s in a row
-                    </aside>
-                </section>
-                <section>
-                    <div class="stretch">
-                        <iframe src="http://three.onefouronefivenine.com" width="100%" height="100%"></iframe>
-                    </div>
-                </section>
-				<section>
-                    <h2>The Bailey-Borwein-Plouffe formula</h2>
-                    <p>\[ \pi = \sum_{k=0}^{\infty} \frac{1}{16^k}\left( \frac{4}{8k+1} - \frac{2}{8k+4} - \frac{1}{8k+5} - \frac{1}{8k+6} \right) \]</p>
-                    <p class="fragment">You can extract <em>any</em> digit of π without working out any of the previous ones.</p>
-				</section>
-				<section>
-					<img src="images/tim-and-eric-mind-blown.gif" width="600">
-				</section>
-				<section>
-                    <h2>That's it!</h2>
-					<svg width="560" height="400" viewBox="-70 -50 140 100">
-						<circle r="40"/>
-                        <path class="animated draw-circumference" d="M 44.5 0 a 44.5 44.5 0 0 1 -89 0 a 44.5 44.5 0 0 1 89 0" stroke="black" fill="none"/>
-                        <line class="animated draw-diameter" x1=40.1 y1=0 x2=-40.1 y2=0 stroke="white"/>
-						<text class="text-circumference" x="0" y="-10" fill="white" text-anchor="middle" font-size="10">π = c/d</text>
-					</svg>
                     <footer>
-                        <p>
-                            <a href="http://somethingorotherwhatever.com">Christian Lawson-Perfect</a> (<a href="http://twitter.com/christianp">@christianp</a>)
-                        </p>
-                        <p><a href="http://aperiodical.com">The Aperiodical - aperiodical.com</a></p>
+                        <p>Christian Lawson-Perfect, Newcastle University</p>
                     </footer>
+
+                    <aside class="notes">
+                        I'm CP, I work at Newcastle University. I make computer homework for maths degree students - I have to know <em>all the maths</em>. I have to solve lots of maths problems to make the questions work.
+                        I also do recreational maths - playing mathematical games with friends, coming up with problems and solving them for fun.
+                        I particularly like sequences of numbers.
+                    </aside>
 				</section>
+                <section>
+                    <p>An <strong>integer</strong> is a whole number.</p>
+                    <p>An <strong>integer sequence</strong> is a sequence of whole numbers.</p>
+                    <aside class="notes">
+                        I'm going to show you a few sequences. Put your hand up if you've seen it before.
+                        What's the pattern?
+                        Someone tell me the next one.
+                    </aside>
+                </section>
+                <section class="stack">
+                    <section>
+                        <h2>1, 2, 3, 4, 5, 6, 7, …</h2>
+                        <h2 class="fragment"><strong>The natural numbers</strong></h2>
+                    </section>
+                    <section>
+                        <h2>1<span class="fragment">, 3</span><span class="fragment">, 5</span><span class="fragment">, 7</span><span class="fragment">, 9</span><span class="fragment">, …</span></h2>
+                        <h2 class="fragment"><strong>The odd numbers</strong></h2>
+                    </section>
+                    <section>
+                        <h2>2<span class="fragment">, 3</span><span class="fragment">, 5</span><span class="fragment">, 7</span><span class="fragment">, 11</span><span class="fragment">, 13</span><span class="fragment">, 17</span><span class="fragment">, …</span></h2>
+                        <h2 class="fragment"><strong>The prime numbers</strong></h2>
+                    </section>
+                    <section>
+                        <h2>1<span class="fragment">, 1</span><span class="fragment">, 2</span><span class="fragment">, 3</span><span class="fragment">, 5</span><span class="fragment">, 8</span><span class="fragment">, 13</span><span class="fragment">, 21</span><span class="fragment">, …</h2></span>
+                        <h2 class="fragment"><strong>The Fibonacci sequence</strong></h2>
+                    </section>
+                    <section>
+                        <h2>3<span class="fragment">, 1</span><span class="fragment">, 4</span><span class="fragment">, 1</span><span class="fragment">, 5</span><span class="fragment">, 9</span><span class="fragment">, 2</span><span class="fragment">, …</span></h2>
+                        <h2 class="fragment"><strong>The digits of π</strong></h2>
+                    </section>
+                </section>
+                <section>
+                    <h2>Notation</h2>
+                    <ul>
+                        <li>A number at a particular position in a sequence is called a <em>term</em>.</li>
+                        <li>We'll call the \(n\)<sup>th</sup> term of a sequence \(\operatorname{a}(n)\).</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The odd numbers</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>\(n\)</th> 
+                                <td> 0 </td>
+                                <td> 1 </td>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 4 </td>
+                                <td> 5 </td>
+                            </tr>
+                            <tr>
+                                <th>\( \operatorname{a}(n) \)</th>
+                                <td> 1 </td>
+                                <td> 3 </td>
+                                <td> 5 </td>
+                                <td> 7 </td>
+                                <td> 9 </td>
+                                <td> 11 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="fragment"> \(\operatorname{a}(n) = \) <span class="fragment"> \(2n+1\) </span></p>
+                    <p class="fragment"> \( \operatorname{a}(52) = \) <span class="fragment"> \(105\) </span></p>
+                </section>
+                <section>
+                    <h3>The Fibonacci sequence</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>\(n\)</th> 
+                                <td> 0 </td>
+                                <td> 1 </td>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 4 </td>
+                                <td> 5 </td>
+                            </tr>
+                            <tr>
+                                <th>\( \operatorname{a}(n) \)</th>
+                                <td> 1 </td>
+                                <td> 1 </td>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 5 </td>
+                                <td> 8 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="fragment"> \(\operatorname{a}(n) = \) <span class="fragment">\( \operatorname{a}(n-2)+\operatorname{a}(n-1) \)</span></p>
+                    <p class="fragment"> \( \operatorname{a}(8) = \) <span class="fragment">\( 34 \)</span></p>
+                </section>
+                <section>
+                    <h3>The prime numbers</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>\(n\)</th> 
+                                <td> 1 </td>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 4 </td>
+                                <td> 5 </td>
+                            </tr>
+                            <tr>
+                                <th>\( \operatorname{a}(n) \)</th>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 5 </td>
+                                <td> 7 </td>
+                                <td> 11 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="fragment"> \(\operatorname{a}(n) = \) <span class="fragment">????</span></p>
+                    <p class="fragment"> \( \operatorname{a}(1,\! 000,\! 000) = \) <span class="fragment">\( 15,\! 485,\! 863 \)</span></p>
+                </section>
+                <section>
+                    <h1>Why study integer sequences?</h1>
+                    <aside class="notes">
+                        When you're doing some mathematical thinking, you can normally construct an integer sequence.
+                        Surprisingly often, you'll come up with a sequence you've seen somewhere else before, meaning you can reuse facts you proved about it earlier.
+                        Integer sequences are an excellent tool for finding the links between very different areas of maths.
+                        It's also just really really interesting.
+                    </aside>
+                </section>
+                <section>
+                    <img src="images/oeis.png">
+                    <aside class="notes">
+                        The OEIS contains over 250,000 sequences, contributed by mathematicians and maths-lovers all around the world.
+                        When I come up with an integer sequence, I look it up on the OEIS to find out if someone else has seen it before.
+                        There's an enormous amount of maths there!
+                        But it's quite hard to read.
+                    </aside>
+                </section>
+                <section class="stack">
+                    <section>
+                        <h1>Review some sequences</h1>
+                        <div class="fragment">
+                            <h3>Judge sequences on:</h3>
+                            <ul>
+                                <li class="fragment">Aesthetics</li>
+                                <li class="fragment">Completeness</li>
+                                <li class="fragment">Explicability</li>
+                                <li class="fragment">Novelty</li>
+                            </ul>
+                        </div>
+                        <aside class="notes">
+                            Something I like to do when I'm bored is to pick a sequence from the OEIS and review it.
+                            I make up some criteria: Aesthetics, Completeness, Explicability, Novelty.
+                            We're going to hand out some descriptions of integer sequences. Review them amongst yourselves, and pick your group's favourite sequence.
+                            I'll ask you to say what your favourite is and why, in 15 minutes.
+                        </aside>
+                    </section>
+                    <section>
+                        <h1>Make up your own sequences</h1>
+                        <ul>
+                            <li class="fragment">A sequence from the real world.</li>
+                            <li class="fragment">A sequence generated by applying an operation to the last number.</li>
+                            <li class="fragment">The numbers with a certain property.</li>
+                        </ul>
+                        <aside class="notes">
+                            I'd like you to have a go at making up your sequences.
+                            These are just prompts - if you come up with something else, that's great.
+                            Remember: it has to be a sequence of whole numbers. Fractions, decimals, or your dog's name are not allowed!
+                        </aside>
+                    </section>
+                    <section>
+                        <h1>Investigate some sequences</h1>
+                        <aside class="notes">
+                            We're going to hand out some sheets with instructions on them.
+                            Follow the instructions and see if you can come up with an integer sequence.
+                            Can you find a pattern in the sequence?
+                        </aside>
+                    </section>
+                </section>
+                <section class="stack">
+                    <section>
+                        <h1>Favourite sequences</h1>
+                        
+                        <aside class="notes">
+                            Somebody, what's your favourite sequence you've seen today?
+
+                            Here are two of my favourite sequences
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Golomb's sequence</h2>
+                        <h3>1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, …</h3>
+                        <p class="fragment">\(n\) appears \(\operatorname{a}(n)\) times in this sequence - it describes itself!</p>
+                        <aside class="notes">
+                            This is <a target="_blank" href="https://oeis.org/A001462">A001462</a> in the OEIS.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>\(3435 \) <span class="fragment">\( = 3^3+4^4+3^3+5^5 \)</span></h2>
+                        <p class="fragment">Take each digit of \(n\) to the power of itself.</p> 
+                        <p class="fragment">The numbers for which this operation gives you back the same number are the <em>M&uuml;nchhausen numbers</em>.</p>
+                        <p class="fragment">There are <strong>only four</strong> M&uuml;nchhausen numbers.</p>
+                        <aside class="notes">
+                            This is <a target="_blank" href="http://oeis.org/A046253">A046253</a> in the OEIS.
+                            The others are 0, 1, 438579088.
+                        </aside>
+                    </section>
+                    <section>
+                        <h1>Finally...</h1>
+                        <aside class="notes">
+                            The look-and-say sequence.
+                        </aside>
+                    </section>
+                </section>
 			</div>
 		</div>
 
@@ -424,77 +325,6 @@
 
             Reveal.addEventListener('slidechanged',start_animations);
             start_animations();
-
-            Reveal.addEventListener('fragmentshown',function(e) {
-                if(e.fragment.getAttribute('data-state')=='polygon-12') {
-                    Reveal.getCurrentSlide().querySelector('.polygon-diagram').classList.add('polygon-12');
-                }
-            });
-            Reveal.addEventListener('fragmenthidden',function(e) {
-                if(e.fragment.getAttribute('data-state')=='polygon-12') {
-                    Reveal.getCurrentSlide().querySelector('.polygon-diagram').classList.remove('polygon-12');
-                }
-            });
-
-            function show_pi_progress() {
-                var p = Reveal.getProgress();
-                document.getElementById('pi-progress').style['max-width'] = (95*p+5)+'%';
-            }
-            Reveal.addEventListener('fragmentshown',show_pi_progress);
-            Reveal.addEventListener('fragmenthidden',show_pi_progress);
-            Reveal.addEventListener('slidechanged',show_pi_progress);
-            show_pi_progress();
-
-
-
-        var canvas = document.getElementById('square');
-        var context = canvas.getContext('2d');
-        canvas.width = 500;
-        canvas.height = 500;
-
-        context.fillRect(0,0,1,1);
-
-        var total = 0;
-        var num_in = 0;
-
-        var pos = 0;
-
-        function point() {
-            for(var i=0;i<7;i++) {
-                var x = Math.random();
-                var y = Math.random();
-                total += 1;
-                var point_in = x*x+y*y<=1;
-                num_in += point_in;
-                var hue = point_in ? 240 : 0;
-                var sat = Math.random()*30+30;
-                context.fillStyle = 'hsla('+hue+','+sat+'%,50%,0.9)'
-                context.fillRect(canvas.width*x-2,canvas.height*(1-y)-2,5,5);
-
-                var approx = 4*num_in/total;
-                var int_approx = Math.floor(approx);
-                var pow = 1e10;
-                var decimal_approx = Math.floor((pow*approx)%pow)+'';
-                while(decimal_approx.length<10) {
-                    decimal_approx = '0'+decimal_approx;
-                }
-                var approx_element = document.getElementById('square-approximation');
-                approx_element.querySelector('.numerator').innerHTML = num_in;
-                approx_element.querySelector('.denominator').innerHTML = total;
-                approx_element.querySelector('.decimal').innerHTML = int_approx+'.'+decimal_approx;
-
-                var d = 1;
-                var places = 0;
-                while(Math.floor(Math.PI*d)==Math.floor(approx*d)) {
-                    d *= 10;
-                    places += 1;
-                }
-            }
-        }
-
-        canvas.addEventListener('click',function() {
-            setInterval(point,50);
-        });
 
 		</script>
 
