@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="524.40942"
+   height="744.09448"
+   id="svg4474"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="folding-paper.svg">
+  <defs
+     id="defs3">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5797"
+       is_visible="true" />
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path5382"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4841"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4829"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="64.519053"
+     inkscape:cy="194.48758"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="495.9849,461.63971"
+       id="guide4588" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="25.253814,462.64987"
+       id="guide4590" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-15.152288,30.304576"
+       id="guide4819" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="86.873119,60.609153"
+       id="guide4821" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26769)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4480"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+       transform="translate(1.4285714,302.85703)"><flowRegion
+         id="flowRegion4482"><rect
+           id="rect4484"
+           width="682.85712"
+           height="134.28572"
+           x="22.857143"
+           y="20.933611" /></flowRegion><flowPara
+         id="flowPara4486"
+         style="font-size:48px">Folding paper</flowPara></flowRoot>    <g
+       id="g4670"
+       transform="translate(0,2.1265092)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4488"
+         y="419.51273"
+         x="25.253815"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="419.51273"
+           x="25.253815"
+           id="tspan4490"
+           sodipodi:role="line">Fold in half</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4492"
+         y="455.8782"
+         x="25.253815"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           id="tspan4596"
+           y="455.8782"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">Take a piece of paper and fold it in half twice.</tspan><tspan
+           y="480.8782"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4737">How many different ways are there of doing it?</tspan><tspan
+           y="505.8782"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4739">How many different ways are there of folding a piece</tspan><tspan
+           y="530.87817"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4741">of paper in half <tspan
+   style="font-style:italic"
+   id="tspan4747">n</tspan> times?</tspan></text>
+    </g>
+    <g
+       id="g4661"
+       transform="translate(0,30.451222)">
+      <g
+         id="g4713">
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+           x="25.253815"
+           y="556.37726"
+           id="text4488-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4490-8"
+             x="25.253815"
+             y="556.37726"
+             style="font-size:28px">Fold in half and cut the corners off</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+           x="25.253815"
+           y="589.71228"
+           id="text4492-2"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan4691"
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="589.71228">Take a piece of paper and fold it in half twice, always</tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="614.71228"
+             id="tspan4769">folding the longest side. </tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="639.71228"
+             id="tspan4773">Then, cut off each of the 4 corners.</tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="664.71228"
+             id="tspan4779">When you unfold it, there's a hole in the middle.</tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="689.71228"
+             id="tspan4781">How many holes when you fold 3 times? 4? <tspan
+   style="font-style:italic"
+   id="tspan4783">n</tspan>?</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4650"
+       transform="translate(0,79.150848)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4488-5"
+         y="694.76807"
+         x="25.253815"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="694.76807"
+           x="25.253815"
+           id="tspan4490-9"
+           sodipodi:role="line">Ridges and valleys</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4492-8"
+         y="728.10315"
+         x="25.253815"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           id="tspan4576"
+           y="728.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">Take a long piece of paper, and fold the right edge </tspan><tspan
+           y="753.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4805">onto the left. Repeat this, never turning the paper.</tspan><tspan
+           y="778.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4807">When you unfold it, you get a sequence of ridges (1s)</tspan><tspan
+           y="803.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4809">and valleys (0s).</tspan><tspan
+           y="828.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4815">What sequence do you get after 2 folds? 3? <tspan
+   style="font-style:italic"
+   id="tspan4817">n</tspan>?</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4559"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"><flowRegion
+         id="flowRegion4561"><rect
+           id="rect4563"
+           width="706.09662"
+           height="219.20311"
+           x="-333.35034"
+           y="351.31631" /></flowRegion><flowPara
+         id="flowPara4565"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4580"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:CMU Bright;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:CMU Bright;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion4582"><rect
+           id="rect4584"
+           width="875.71429"
+           height="607.14288"
+           x="-21.428572"
+           y="122.66591" /></flowRegion><flowPara
+         id="flowPara4586"></flowPara></flowRoot>    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:4.97777176;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 96.453378,1021.5687 94.566282,-29.32679 144.67832,29.32679 85.67543,-29.32679"
+       id="path4827"
+       inkscape:path-effect="#path-effect4829"
+       inkscape:original-d="m 96.453378,1021.5687 94.566282,-29.32679 144.67832,29.32679 85.67543,-29.32679"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+       x="316.8605"
+       y="955.1687"
+       id="text4831"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:20px"
+         sodipodi:role="line"
+         id="tspan4833"
+         x="316.8605"
+         y="955.1687">valley</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+       x="137.38075"
+       y="950.33679"
+       id="text4835"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:20px"
+         sodipodi:role="line"
+         id="tspan4837"
+         x="137.38075"
+         y="950.33679">ridge</tspan></text>
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 167.68532,955.26126 15.78364,26.76904"
+       id="path4839"
+       inkscape:path-effect="#path-effect4841"
+       inkscape:original-d="m 167.68532,955.26126 15.78364,26.76904"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 332.69944,964.50503 2.32143,47.32147"
+       id="path5795"
+       inkscape:path-effect="#path-effect5797"
+       inkscape:original-d="m 332.69944,964.50503 2.32143,47.32147"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

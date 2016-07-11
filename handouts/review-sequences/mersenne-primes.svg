@@ -14,7 +14,7 @@
    viewBox="0 0 1052.3622 744.09448"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="mersenne-primes.svg">
   <defs
      id="defs4" />
@@ -32,10 +32,10 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="false"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -184,7 +184,7 @@
          y="992.36218">  </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
        x="54.431026"
        y="704.05292"
        id="text3390-1"
@@ -192,12 +192,12 @@
          sodipodi:role="line"
          x="54.431026"
          y="704.05292"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium Oblique'"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium Oblique"
          id="tspan4434">Prime numbers <tspan
    style="font-style:italic"
    id="tspan4481">p</tspan> such that 2<tspan
-   style="font-style:italic;font-size:64.99999762%;baseline-shift:super"
-   id="tspan4432">p</tspan> - 1 is prime.</tspan></text>
+   style="font-size:65.00091553%;font-style:italic;baseline-shift:super"
+   id="tspan4432">p</tspan> - 1 is also prime.</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

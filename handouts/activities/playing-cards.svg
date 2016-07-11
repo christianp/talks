@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="524.40942"
+   height="744.09448"
+   id="svg4474"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="playing-cards.svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="190.84672"
+     inkscape:cy="283.11674"
+     inkscape:current-layer="g4713"
+     showgrid="false"
+     units="mm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="495.9849,461.63971"
+       id="guide4588" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="25.253814,462.64987"
+       id="guide4590" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26769)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4480"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+       transform="translate(1.4285714,302.85703)"><flowRegion
+         id="flowRegion4482"><rect
+           id="rect4484"
+           width="682.85712"
+           height="134.28572"
+           x="22.857143"
+           y="20.933611" /></flowRegion><flowPara
+         id="flowPara4486"
+         style="font-size:48px">Playing card sequences</flowPara></flowRoot>    <g
+       id="g4670"
+       transform="translate(0,2.1264631)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4488"
+         y="419.51273"
+         x="25.253815"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="419.51273"
+           x="25.253815"
+           id="tspan4490"
+           sodipodi:role="line">Ways of ordering</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4492"
+         y="455.8782"
+         x="25.253815"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           y="455.8782"
+           x="25.253815"
+           id="tspan4494"
+           sodipodi:role="line"
+           style="font-size:20px">Take the Ace, 2 and 3 of Hearts. How many different </tspan><tspan
+           id="tspan4496"
+           y="480.8782"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">ways can you order them? </tspan><tspan
+           y="505.8782"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4683">How about the Ace, 2, 3 and 4?</tspan><tspan
+           id="tspan4498"
+           y="530.87817"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">Keep increasing the number of cards. </tspan><tspan
+           id="tspan4596"
+           y="555.87817"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">How many ways can you order all 52 cards?</tspan></text>
+    </g>
+    <g
+       id="g4661"
+       transform="translate(0,74.052275)">
+      <g
+         id="g4713">
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+           x="25.253815"
+           y="556.37726"
+           id="text4488-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4490-8"
+             x="25.253815"
+             y="556.37726"
+             style="font-size:28px">Digit cards</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+           x="25.253815"
+           y="589.71228"
+           id="text4492-2"
+           sodipodi:linespacing="125%"><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="589.71228"
+             id="tspan4498-3">You can &quot;write&quot; the number 2,103 by putting the </tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="614.71228"
+             id="tspan4600">2, 10 and 3 cards next to each other.</tspan><tspan
+             id="tspan4689"
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="639.71228">Which numbers can you make using just the Hearts?</tspan><tspan
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="664.71228"
+             id="tspan4540">What's the biggest number you can make using </tspan><tspan
+             id="tspan4691"
+             style="font-size:20px"
+             sodipodi:role="line"
+             x="25.253815"
+             y="689.71228">all 36 number cards?</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4650"
+       transform="translate(0,141.42136)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4488-5"
+         y="694.76807"
+         x="25.253815"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="694.76807"
+           x="25.253815"
+           id="tspan4490-9"
+           sodipodi:role="line">Deal into two piles</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4492-8"
+         y="728.10315"
+         x="25.253815"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"
+         xml:space="preserve"><tspan
+           id="tspan4498-7"
+           y="728.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">Again, take the Ace, 2, 3 and 4 of Hearts. </tspan><tspan
+           id="tspan4572"
+           y="753.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">Deal them alternately into two piles, then pick the </tspan><tspan
+           id="tspan4574"
+           y="778.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">piles up and put them together.</tspan><tspan
+           y="803.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px"
+           id="tspan4705">How many times do you need to repeat this before the</tspan><tspan
+           id="tspan4606"
+           y="828.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">cards are reversed from their original order?</tspan><tspan
+           id="tspan4576"
+           y="853.10315"
+           x="25.253815"
+           sodipodi:role="line"
+           style="font-size:20px">How many times with 6 cards? With 8? With <tspan
+   id="tspan4578"
+   style="font-size:20px;font-style:italic">n</tspan>?</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4559"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright"><flowRegion
+         id="flowRegion4561"><rect
+           id="rect4563"
+           width="706.09662"
+           height="219.20311"
+           x="-333.35034"
+           y="351.31631" /></flowRegion><flowPara
+         id="flowPara4565" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4580"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:CMU Bright;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:CMU Bright;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion4582"><rect
+           id="rect4584"
+           width="875.71429"
+           height="607.14288"
+           x="-21.428572"
+           y="122.66591" /></flowRegion><flowPara
+         id="flowPara4586" /></flowRoot>  </g>
+</svg>

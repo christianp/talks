@@ -14,7 +14,7 @@
    viewBox="0 0 1052.3622 744.09448"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="perfect-numbers.svg">
   <defs
      id="defs4" />
@@ -32,10 +32,10 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="false"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -147,7 +147,7 @@
            style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
          id="flowPara3388" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
        x="55.351025"
        y="731.77112"
        id="text3390"
@@ -156,14 +156,14 @@
          id="tspan3392"
          x="55.351025"
          y="731.77112"
-         style="-inkscape-font-specification:'CMU Bright Medium Oblique';font-family:'CMU Bright';font-weight:500;font-style:oblique;font-stretch:normal;font-variant:normal">n <tspan
+         style="font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium Oblique">n <tspan
    style="font-style:normal"
    id="tspan3959">such that </tspan>n<tspan
    style="font-style:normal"
-   id="tspan3961"> is equal to the sum of its divisors</tspan></tspan></text>
+   id="tspan3961"> is equal to the sum of its divisors.</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
        x="55.311962"
        y="817.53845"
        id="text3398"
@@ -172,17 +172,17 @@
          id="tspan3400"
          x="55.311962"
          y="817.53845"
-         style="-inkscape-font-specification:'CMU Bright Bold';font-family:'CMU Bright';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">Example: </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Bold">Example: </tspan><tspan
          sodipodi:role="line"
          x="55.311962"
          y="867.53845"
          id="tspan3408"
-         style="-inkscape-font-specification:'CMU Bright Bold';font-family:'CMU Bright';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">1, 2 and 3 divide into 6. </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Bold">1, 2 and 3 divide into 6. </tspan><tspan
          sodipodi:role="line"
          x="55.311962"
          y="917.53845"
          id="tspan3410"
-         style="-inkscape-font-specification:'CMU Bright Bold';font-family:'CMU Bright';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">1+2+3 = 6</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Bold">1+2+3 = 6.</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="thue-morse.svg">
+   sodipodi:docname="all-sevens.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="1034.976"
-     inkscape:cy="102.62343"
+     inkscape:cx="19.592633"
+     inkscape:cy="139.79421"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,7 +88,44 @@
            x="328.57144"
            y="115.52306"
            style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
-         id="flowPara3358">thththtthththt</flowPara></flowRoot>    <flowRoot
+         id="flowPara3358">thththtthththt</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
+       x="293.54901"
+       y="416.47113"
+       id="text3360"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3362"
+         x="293.54901"
+         y="416.47113"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium">Powers of 2</tspan></text>
+    <g
+       id="g3412"
+       transform="translate(33.226665,8.0432079)">
+      <rect
+         y="470.51434"
+         x="28.284271"
+         height="175.76654"
+         width="929.34033"
+         id="rect3372"
+         style="fill:#cccccc" />
+      <flowRoot
+         transform="translate(15.81514,310.89101)"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
+         id="flowRoot3364"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3366"><rect
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
+             y="174.36845"
+             x="46.467018"
+             height="307.08636"
+             width="969.74646"
+             id="rect3368" /></flowRegion><flowPara
+           id="flowPara3589">1, 2, 4, 8, 16, 32, 64, 128, 256, 1024, </flowPara><flowPara
+           id="flowPara3031">2048, 4096, 8192, 16384, 32768, 65536,</flowPara><flowPara
+           id="flowPara3033">131072, 262144, 524288, 1048576, …</flowPara></flowRoot>    </g>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot3374"
        style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'CMU Bright';font-style:normal;font-weight:500;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'CMU Bright Medium';font-stretch:normal;font-variant:normal;"><flowRegion
@@ -112,93 +149,49 @@
            style="-inkscape-font-specification:'CMU Bright Medium';font-family:'CMU Bright';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
          id="flowPara3388" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="106.35923"
-       y="416.47113"
-       id="text3360"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3362"
-         x="106.35923"
-         y="416.47113"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:90px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Medium'">Thue-Morse sequence</tspan></text>
-    <g
-       id="g3412"
-       transform="translate(33.226665,0.29940301)">
-      <rect
-         y="470.51434"
-         x="28.284271"
-         height="175.76654"
-         width="929.34033"
-         id="rect3372"
-         style="fill:#cccccc" />
-      <flowRoot
-         transform="translate(15.81514,310.89101)"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         id="flowRoot3364"
-         xml:space="preserve"><flowRegion
-           id="flowRegion3366"><rect
-             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium'"
-             y="174.36845"
-             x="46.467018"
-             height="307.08636"
-             width="969.74646"
-             id="rect3368" /></flowRegion><flowPara
-           id="flowPara3589">0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, </flowPara><flowPara
-           id="flowPara3743">1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, </flowPara><flowPara
-           id="flowPara3745">1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, …</flowPara></flowRoot>    </g>
-    <text
-       xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
        x="55.351025"
-       y="713.69287"
+       y="752.07867"
        id="text3390"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="713.69287"
+         y="752.07867"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3636">Replace every <tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
-   id="tspan3800">0</tspan> in this sequence with <tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
-   id="tspan3802">01</tspan> and <tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
-   id="tspan3804">1</tspan> with <tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Typewriter Text;-inkscape-font-specification:CMU Typewriter Text Medium"
-   id="tspan3806">10</tspan>: </tspan><tspan
+         id="tspan3638">a(<tspan
+   style="font-style:italic"
+   id="tspan3075">n</tspan>) = 2<tspan
+   style="font-size:65.00091553000000000%;baseline-shift:super;font-style:italic"
+   id="tspan3035">n</tspan>.</tspan><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="764.75153"
+         y="802.07867"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3776">you end up with the same sequence!</tspan><tspan
+         id="tspan3041" /><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="814.75153"
+         y="852.07867"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3826" /><tspan
+         id="tspan3662">If you placed one grain of rice on the first square of a</tspan><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="864.75153"
+         y="902.07867"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3816">Solution to the &quot;taking turns&quot; problem: more fair</tspan><tspan
+         id="tspan3047">chess board and doubled the number on each subsequent</tspan><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="914.75153"
+         y="952.07867"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3786">than just alternating between two sides.</tspan><tspan
+         id="tspan3055">square, the last one would have<tspan
+   style="font-weight:bold"
+   id="tspan3065"></tspan></tspan><tspan
          sodipodi:role="line"
          x="55.351025"
-         y="964.75153"
+         y="1002.0787"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3824" /><tspan
-         sodipodi:role="line"
-         x="55.351025"
-         y="1014.7515"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:CMU Bright;-inkscape-font-specification:CMU Bright Medium"
-         id="tspan3812">The mean of the first n terms is as close to <tspan
-   style="-inkscape-font-specification:Arial;font-family:Arial"
-   id="tspan3032">½</tspan> as possible. </tspan></text>
+         id="tspan3071"><tspan
+   style="font-weight:bold"
+   id="tspan3073">18,446,744,073,709,551,616</tspan> grains of rice on it!</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3454"
