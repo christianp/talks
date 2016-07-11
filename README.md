@@ -1,3 +1,3 @@
-# A talk for π Day 2016
+# A masterclass on integer sequences
 
-At Café Scientifique, Ustinov College, Durham University.
+For a Royal Institution maths year 9 (13/14 years old) masterclass.
