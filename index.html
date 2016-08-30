@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Adaptive marking with Numbas</title>
+		<title>The maths e-assessment experience</title>
 
-		<meta name="description" content="How Numbas implements adaptive marking for mathematics questions">
+		<meta name="description" content="Keynote speech at EAMS 2016">
 		<meta name="author" content="Christian Lawson-Perfect">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,194 +40,215 @@
 		<div class="reveal">
 
 			<div class="slides">
-				<section>
-					<h1>Adaptive marking with Numbas</h1>
-					<h3></h3>
-					<p>
+				<section id="title">
+					<h1>The maths e-assessment experience</h1>
+                    <p>
+                    <br>
                         <small><a href="mailto:christian.perfect@ncl.ac.uk">Christian Lawson-Perfect</a>, Newcastle University. <a href="http://twitter.com/nclnumbas">@NclNumbas</a></small>
 					</p>
                 </section>
 
                 <section id="hi">
-                    <h2>Hi</h2>
-                    <p class="left-align">
-                        Christian Lawson-Perfect,
-                        <br>
-                        School of Mathematics and Statistics, 
-                        <br>
-                        Newcastle University.
-                    </p>
-                    <p>I've been working on Numbas as its lead developer since 2011.</p>
+                    <h2>The landscape</h2>
+                    <ul>
+                        <li>Islands of use</li>
+                        <li>Commercial systems bundled with textbooks</li>
+                        <li>Or systems developed by the only person using them</li>
+                        <li>Or without support from higher-ups</li>
+                    </ul>
                 </section>
 
-                <section id="numbas-is">
-                    <h2>What is Numbas?</h2>
+                <section>
+                    <p>I'd love to give a technical talk about something obscure</p>
 
-                    <p>Numbas is an open-source system developed by the e-Learning Unit of Newcastle University's School of Maths and Stats, based on many years of use, experience and research into e-assessment.</p>
-                    <p>It's aimed at numerate disciplines.</p>
-                    <p>It creates SCORM-compliant exams which run entirely in the browser, compatible with VLEs such as Blackboard and Moodle.</p>
+                    <p>But this is a keynote, so it has to be upbeat and inspiring</p>
+
+                    <p>I'm also not going to talk about the efficacy of e-assessment.</p>
                 </section>
 
-                <section id="history">
-                    <h2>History</h2>
-
-                    <p>Numbas follows the CALM model.</p>
-
-                    <p>At Newcastle, we used the commercial system <em>i-assess</em> for six years before switching to Numbas.</p>
-
-                    <p>Development began in 2011 with the aim of replacing <em style="display: inline-block;">i-assess.</em></p>
-                </section>
-
-                <section id="design">
-                    <h2>Design goals</h2>
+                <section>
+                    <h2>Maths has special needs</h2>
 
                     <ul>
-                        <li>Scalable, reliable and accessible to a broad range of users.</li>
-                        <li>Good at maths, but usable for other subjects too.</li>
-                        <li>Good-looking and easy for students to use.</li>
-                        <li>Used by question authors who aren't experts.</li>
-                        <li>Emphasis on creating rich formative e-assessment and learning materials.</li>
-                        <li>Feedback an important part of the design and implementation.</li>
+                        <li>Just displaying maths is hard</li>
+                        <li>Randomly generating maths questions is harder
+                        <li>Marking maths questions is hardest of all</li>
                     </ul>
                 </section>
 
-                <section id="usability">
-                    <h2>Usability</h2>
-
-                    <h3>For students</h3>
-                    <p>The interface is clean, and accessible by screen readers. Feedback is immediate.</p>
-                    <p>Tests run on any device - desktop, tablet, mobile - with a responsive design.</p>
-                    <p>Over several years, and based on student feedback, the interface has improved.</p>
+                <section>
+                    <h2>We need to share what we're doing — and make a song and dance about successes</h2>
                 </section>
 
                 <section>
-                    <img src="images/numbas_runtime.png">
-                </section>
-
-                <section id="usability-authors">
-                    <h2>Usability</h2>
-
-                    <h3>For authors</h3>
-                    <p>Using the graphical editor, you can create a simple question with no previous knowledge.</p>
-                    <p>Gradually add more complicated elements, such as LaTeX maths notation.</p>
-                    <p>Can test run questions immediately.</p>
-                    <p>Template questions make customising existing material easier.</p>
+                    <h2>UX</h2>
+                    <p>User experience is really important.</p>
+                    <p>An e-assessment system should be <em>clear</em> and <em>intuitive</em>.</p>
                 </section>
 
                 <section>
-                    <img src="images/numbas_editor.png">
+                    <p>Contrast bad UX with good</p>
+                    <p>Windows app &rarr; bad presentation &rarr; bad input method &rarr; bad feedback; unclear buttons; unhelpful error messages.</p>
                 </section>
 
-                <section id="integration-with-vle">
-                    <h2>Integration with a VLE</h2>
-
-                    <p>Numbas uses the SCORM 2004 standard to integrate with compliant VLEs, such as Moodle and Blackboard.</p>
-                    <p>Or you can use it without a VLE.</p>
+                <section>
+                    <p><a href="http://mathcentre.ac.uk/resources/tests/swf/Arithmetic/Exercises/1-01e.swf">http://mathcentre.ac.uk/resources/tests/swf/Arithmetic/Exercises/1-01e.swf</a></p>
+                    <img src="images/bad-fractions-blank.png">
+                    <img src="images/bad-fractions-complete.png">
                 </section>
 
-                <section id="customisation">
-                    <h2>Customisation</h2>
-
-                    <img src="images/extensions.png" class="pull-right" width="300">
-
-                    <p>A large driver for Numbas was the lack of customisability in previous systems.</p>
-                    <p>Interface and logic are completely separated in Numbas - custom themes can change the look of tests, or reimagine how they're run.</p>
-                    <p>Extensions allow the addition of new functions, data types, and resources.</p>
-                </section>
-
-                <section id="formative-vs-summative">
-                    <h2>Formative vs summative use</h2>
-
-                    <p>Computer-aided assessment is great for formative assessment.</p>
-                    <p>Students can try randomised questions over and over until they're happy.</p>
-                    <p>Summative assessment poses problems:</p>
+                <section>
+                    <h2>Little details in Numbas</h2>
                     <ul>
-                        <li>How to prevent cheating?</li>
-                        <li>Can you ask the right sort of questions for a high-stakes summative exam?</li>
+                        <li>Descriptive messages instead of abbreviations</li>
+                        <li>Always explain what's happening</li>
+                        <li>The screen is legible</li>
+                        <li></li>
                     </ul>
                 </section>
 
-                <section id="open-access">
-                    <h2>Open access</h2>
-                    
-                    <p>Compiled Numbas tests are SCORM packages: they're completely self-contained. Perfect for open access resources.</p>
-                    <p>We want to establish a community of authors and users producing quality open-access material.</p>
-                    </section>
                 <section>
-                    <img src="images/open_access_questions.png">
-                </section>
-
-                <section id="complexity-of-questions">
-                    <h2>Complexity of questions</h2>
-
-                    <p>Most high school or undergrad maths questions are easily implemented in Numbas.</p>
-                    <p>Randomising questions can be hard, and marking can be hard - but Numbas makes it easier.</p>
-                </section>
-
-                <section id="complexity-of-questions-variables">
-                    <h2>Variable generation</h2>
-
-                    <p>Variables are generated declaratively; variables can build on other variables.</p>
-                    <p>The definition interface allows you to work interactively: see generated values immediately, and test for properties.</p>
+                    <h2>This all applied to question design too</h2>
+                    <p>(make an example)</p>
                 </section>
 
                 <section>
-                    <img src="images/variable_testing.png">
-                </section>
-
-                <section id="adaptive-marking">
-                    <h2>Adaptive marking</h2>
-
-                    <p>Students kept asking for error-carried-forward marking.</p>
-                    <p>This is complicated to implement, and doubly so when questions are randomised.</p>
-                </section>
-
-                <section id="adaptive-marking-implementation">
-                    <h2>Adaptive marking</h2>
-
-                    <p><strong>Solution:</strong> when marking a part, replace some question variable(s) with the student's answers to previous parts.</p>
-                    <p>A new "correct" answer is automatically calculated.</p>
-                    <p class="fragment">It works surprisingly well!</p>
-                </section>
-
-                <section>
-                    <img src="images/adaptive_marking_question.png">
-                </section>
-
-                <section>
-                    <img src="images/adaptive_marking_replacement.png">
-                </section>
-
-                <section>
-                    <img src="images/adaptive_marking_marked.png">
-                </section>
-
-                <section id="demo">
-                    <h2>Demo</h2>
-
-                    <p class="center-align"><a target="_blank" href="http://numbas.mathcentre.ac.uk">numbas.mathcentre.ac.uk</a></p>
-
-                </section>
-
-
-                <section id="end">
-                    <h2>Thanks!</h2>
-
-                    <h3>Website</h3>
-                    <ul style="list-style:none">
-                        <li><a href="http://www.numbas.org.uk">numbas.org.uk</a></li>
+                    <h2>The VLE</h2>
+                    <p>You typically have much less control over the VLE.</p>
+                    <p><strong>BUT</strong></p>
+                    <p>Student should be able to:</p>
+                    <ul>
+                        <li>See their score or status</li>
+                        <li>Review their session</li>
                     </ul>
+                </section>
 
-                    <h3>Contact</h3>
-                    <ul style="list-style: none">
-                        <li>Email: <a href="mailto:numbas@ncl.ac.uk">numbas@ncl.ac.uk</a></li>
-                        <li>Twitter: <a href="http://twitter.com/NclNumbas">@NclNumbas</a></li>
+                <section>
+                    <h3>The author experience is also important</h3>
+                    <ul>
+                        <li>I prefer WYSIWYG to coding</li>
+                        <li>There should be a low barrier to entry</li>
+                        <li>The interface should link things together - "where is this variable defined?"</li>
+                        <li>Organising material is hard!</li>
                     </ul>
+                </section>
 
-                    <h3>Source code</h3>
-                    <ul style="list-style: none">
-                        <li><a href="http://github.com/numbas">github.com/numbas</a></li>
+                <section>
+                <h2>Here at Newcastle</h2>
+                    <p>We improved student opinion and use of e-assessment</p>
+                    <img src="images/student-survey.png">
+                </section>
+
+                <section>
+                    <h2>By...</h2>
+                    <ul>
+                        <li>Improving the user experience of our system</li>
+                        <li>Changing the way we make assessment available</li>
                     </ul>
+                </section>
+
+                <section>
+                    <p>In 2006, we introduced CBAs to practise key skills in Stage 1.</p>
+                    <p>Students saw a test for one week in practice mode, then get one attempt the following week in assessed mode.</p>
+                    <p>As it was a success, use edge up the syllabus to stages 2 and 3.</p>
+                </section>
+
+                <section>
+                    <p>In our new curriculum, students have access to a large bank of practice questions throughout the year.</p>
+                    <p>Assessed tests are picked from the practice bank, so students should try everything.</p>
+                    <p>Usage of practice material increased, particularly before exams.</p>
+                </section>
+
+                <section>
+                    <h2>Now</h2>
+                    <ul>
+                        <li>Practice tests all over the place during courses</li>
+                        <li>À la carte tests through maths support service.</li>
+                        <li></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Formative assessment</h2>
+                    <p>I'm not interested in summative assessment.</p>
+                    <p>Because of the way e-assessment works, it's good for formative use.</p>
+					<aside class="notes">
+                        What I'm getting at is that formative work is improved by e-assessment more than summative is.
+                        
+					</aside>
+                </section>
+
+                <section>
+                    <p>When marks don't matter, you can do more interesting things.</p>
+                    <p><strong>It's not just a question to finish any more.</strong></p>
+					<aside class="notes">
+                    </aside>    
+                </section>
+
+                <section>
+                    <p>A question is no longer a straight line, leading to a score and feedback.</p>
+                    <p>Instead <strong>retry</strong>, and <strong>play</strong> with the system.</p>
+					<aside class="notes">
+                    </aside>    
+                </section>
+
+                <section>
+                    <p>Think up a number between 100 and 1000.</p>
+                    <p>Is it prime?</p>
+                    <p>What's its square root?</p>
+                    <p>What's its largest prime divisor?</p>
+                    <p>Factorise it</p>
+                    <p>
+                    <aside class="notes">
+                        Instead of being given a random number to work with, student gets to pick - they can start to find the patterns.
+                    </aside>    
+                </section>
+
+                <section>
+                    <p>Displaying stuff visually helps a lot</p>
+                    <p>Graphs</p>
+                    <p>GeoGebra</p>
+					<aside class="notes">
+                    </aside>    
+                </section>
+
+                <section>
+                    <h2>The assessment is really feedback</h2>
+					<aside class="notes">
+                    </aside>    
+                </section>
+
+                <section>
+                    <p>It's a short step from what we're doing to games</p>
+                    <p>Mathbreakers</p>
+                    <p>Sumaze</p>
+                    <aside class="notes">
+                        In these games, the student isn't being directly tested, as far as they're aware.
+                        Instead, in order to succeed, they need to absorb some facts.
+                        Not great at directly imparting knowledge.
+                        "Just good enough" understanding is OK here - don't have to articulate why something works.
+                    </aside>    
+                </section>
+
+                <section>
+                    <p>Primary school maths e-assessment is interesting.</p>
+                    <p>MyMaths</p>
+                    <h2>ALL ABOUT PRESENTATION</h2>
+                    <aside class="notes">
+                        This is where I admit that instructional design is a thing?
+
+                    </aside>    
+                </section>
+
+                <section>
+                    <h2>My to-do list</h2>
+                    <ul>
+                        <li>What UI changes are needed for primary/non-HE use?</li>
+                        <li>Change the "exam" format to something freer.</li>
+                        <li>An interface/language for defining custom marking schemes</li>
+                    </ul>
+					<aside class="notes">
+                    </aside>    
                 </section>
 
 			</div>
