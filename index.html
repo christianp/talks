@@ -39,41 +39,84 @@
 
 		<div class="reveal">
 
-			<div class="slides">
-				<section id="title">
-					<h1>The maths e-assessment experience</h1>
-                    <p>
-                    <br>
-                        <small><a href="mailto:christian.perfect@ncl.ac.uk">Christian Lawson-Perfect</a>, Newcastle University. <a href="http://twitter.com/nclnumbas">@NclNumbas</a></small>
-					</p>
+            <div class="slides">
+                <section>
+                </section>
+
+                <section id="title">
+                    <div class="with-geordie">
+                        <div class="main">
+                            <h1>The maths<br> e-assessment experience</h1>
+                            <p style="margin-top:2em">
+                                <small><a href="mailto:christian.perfect@ncl.ac.uk">Christian Lawson-Perfect</a>, Newcastle University. <a target="_blank" href="http://twitter.com/nclnumbas">@NclNumbas</a></small>
+                            </p>
+                        </div>
+                        <div class="geordie">
+                            <img src="images/geordies/waving.svg">
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <p>Welcome to Newcastle!</p>
+                        <p>This conference is about getting together people from all around the world who are using computers to help assess their students' maths skills.</p>
+                        <p>Thank you to those who've travelled a very long way to get here - I think we in the UK don't look outside enough at what our overseas friends are doing, so thanks for saving us the effort.</p>
+                        <p>I'll briefly introduce you all to each other: you mainly work in HE. A few of you belong to commercial e-assessment providers. A handful of you work at school level.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Christian Lawson-Perfect</h2>
+                    <ul>
+                        <li class="fragment">e-learning officer, School of Mathematics and Statistics, Newcastle University</li>
+                        <li class="fragment">Born and raised in Newcastle</li>
+                        <li class="fragment">Recently double-barrelled</li>
+                        <li class="fragment">Lead developer of <em>Numbas</em></li>
+                    </ul>
                 </section>
 
                 <section id="hi">
                     <h2>The landscape</h2>
+
+                    <div class="center-align">
+                        <img class="plain" src="images/geordies/hammock.svg" style="height: 200px">
+                    </div>
+
                     <ul>
-                        <li>Islands of use</li>
-                        <li>Commercial systems bundled with textbooks</li>
-                        <li>Or systems developed by the only person using them</li>
-                        <li>Or without support from higher-ups</li>
+                        <li class="fragment">Islands of use</li>
+                        <li class="fragment">
+                            Commercial systems bundled with textbooks
+                            <div class="fragment">
+                                <img src="images/mymathlab.png" class="inline plain" style="height: 1.5em">
+                                <img src="images/maple-ta.png" class="inline plain" style="height: 1.5em;">
+                                <img src="images/wileyplus.gif" class="inline plain" style="height: 1.5em;">
+                            </div>
+                        </li>
+                        <li class="fragment">Or systems developed by the only person using them</li>
+                        <li class="fragment">Or without support from higher-ups</li>
                     </ul>
+                    <aside class="notes">
+                        <p>Whenever I visit other institutions, it's rare to find a team who are aware of more than one or two different e-assessment systems.</p>
+                        <p>Very often, one person has started up using something they found by chance, or has started writing their own thing from scratch.</p>
+                        <p>How many of you are part of a <em>team</em> developing maths e-assessment material?</p>
+                        <p>How many use a commercial system like WileyPlus or MyLab? Not bad, but what do you do when you want to do something new? And who owns your content?</p>
+                        <p>Who are the heroes who make your own systems?</p>
+                        <p>Finally, who has come from the magical land where everyone's committed to a good, maths-specific assessment system, with support from management and central IT?</p>
+                    </aside>
                 </section>
 
                 <section>
-                    <p>I'd love to give a technical talk about something obscure</p>
-
-                    <p>But this is a keynote, so it has to be upbeat and inspiring</p>
-
-                    <p>I'm also not going to talk about the efficacy of e-assessment.</p>
-                </section>
-
-                <section>
-                    <h2>Maths has special needs</h2>
-
-                    <ul>
-                        <li>Just displaying maths is hard</li>
-                        <li>Randomly generating maths questions is harder
-                        <li>Marking maths questions is hardest of all</li>
-                    </ul>
+                    <div class="with-geordie">
+                        <div class="geordie">
+                            <img src="images/geordies/arms-out.svg">
+                        </div>
+                        <div class="main">
+                            <h2>This talk is about how to do <br>e-assessment well</h2>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <p>I'd love to give a technical talk about something obscure.</p>
+                        <p>But this is a keynote, so it has to be upbeat and inspiring.</p>
+                        <p>I'm also not going to talk about the efficacy of e-assessment.</p>
+                    </aside>
                 </section>
 
                 <section>
@@ -81,91 +124,332 @@
                 </section>
 
                 <section>
+                    <h2>Good news from Newcastle</h2>
+                    <p>Numbas was used in <strong>48 modules</strong> in the 2015/16 academic year</p>
+                    <p>by <strong>2,000 students</strong>, who completed a total of <strong>40,800 attempts</strong>.</p>
+                    <p>Core team of 3 developers, with lecturers writing some material.</p>
+
+                    <aside class="notes">
+                        <p>So to start, here's how it's going at Newcastle: quite well.</p>
+                        <p>I'll talk in more depth about what we do later on.</p>
+                        <p>But first, why do we need a <em>maths</em> e-assessment conference?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Maths has special needs</h2>
+
+                    <ul class="list-unstyled">
+                        <li>Just displaying maths is hard</li>
+                        <li>Randomly generating maths questions is harder</li>
+                        <li>Marking maths questions is hardest of all</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>For e-assessment of maths to be any good, there are some must-haves that most e-assessment systems can't provide.</p>
+                        <p>We hosted MatRIC a few months ago, and this message that maths is different came out loud and clear from everyone in attendance.</p>
+                        <p>You can dispute my ordering of difficulty.</p>
+                    </aside>
+                </section>
+
+                <section>
                     <h2>UX</h2>
                     <p>User experience is really important.</p>
                     <p>An e-assessment system should be <em>clear</em> and <em>intuitive</em>.</p>
+                    <aside class="notes">
+                        <p>"UX" is one of those nebulous concepts that people who know what they're talking about use.</p>
+                        <p>I'm going to try to contrast bad UX with good, but picking apart systems made by people in the audience would be unkind.</p>
+                    </aside>
                 </section>
 
                 <section>
-                    <p>Contrast bad UX with good</p>
-                    <p>Windows app &rarr; bad presentation &rarr; bad input method &rarr; bad feedback; unclear buttons; unhelpful error messages.</p>
+                    <section>
+                        <h2>Marking must do what it says, and say what it does</h2>
+                        <aside class="notes">
+                            <p>Here's a starter: this isn't just a "validity" issue, it's a user experience issue.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <p><a target="_blank" href="http://mathcentre.ac.uk/resources/tests/swf/Arithmetic/Exercises/1-01e.swf">An example picked at random from <strong>math</strong>centre</a></p>
+                    </section>
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/bad-fractions-blank.png">
+                            </div>
+                        </div>
+                        <aside class="notes">
+                            <p>How will this be marked?</p>
+                            <p>Hands up if you can give a correct answer. I'm not going to ask for one.</p>
+                            <p>But I prefer to ask audiences if they can give an incorrect answer.</p>
+                            <p>What is an incorrect answer here?</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/bad-fractions-complete.png">
+                            </div>
+                            <div class="fragment geordie">
+                                <img class="plain" src="images/geordies/cross.svg">
+                            </div>
+                        </div>                    
+                        <aside class="notes">
+                            <p>Here's my best effort at a wrong answer.</p>
+                            <p>But it marks it right!</p>
+                        </aside>
+                    </section>
                 </section>
 
                 <section>
-                    <p><a href="http://mathcentre.ac.uk/resources/tests/swf/Arithmetic/Exercises/1-01e.swf">http://mathcentre.ac.uk/resources/tests/swf/Arithmetic/Exercises/1-01e.swf</a></p>
-                    <img src="images/bad-fractions-blank.png">
-                    <img src="images/bad-fractions-complete.png">
+                    <section>
+                        <h2>im a massive pedant</h2>
+                        <aside class="notes">
+                            <p>I often feel like I'm being very nitpicky when editing questions.</p>
+                            <p>But little tweaks to make the student's life easier are well worth your time.</p>
+                            <p>You're testing if they can do maths - so why assume they can do something harder, like read a page of text in full?</p>
+                        </aside>
+                    </section>
                 </section>
 
                 <section>
-                    <h2>Little details in Numbas</h2>
-                    <ul>
-                        <li>Descriptive messages instead of abbreviations</li>
-                        <li>Always explain what's happening</li>
-                        <li>The screen is legible</li>
-                        <li></li>
-                    </ul>
+                    <section>
+                        <h2>Little details in i-assess</h2>
+                        <aside class="notes">
+                            <p>When I started working here, we used i-assess, which was developed by some people in Scotland who kept changing names.</p>
+                            <p>i-assess was alright, but it had more than a few usability problems.</p>
+                            <p>Lots of the problems were results of the time it was written, but there are plenty that could've been avoided.</p>
+                        </aside>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/i-assess/intro.png">
+                        <aside class="notes">
+                            <p>Here's what it looks like. It's a windows desktop program which you have to install on your PC from a DVD.</p>
+                            <p>The display size is fixed - I've blown up this image so you can read it.</p>
+                        </aside>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/i-assess/question-screen.png">
+                        <aside class="notes">
+                            <p>And here's a question.</p>
+                            <p>I'm going to ask you what a few of these buttons do.</p>
+                        </aside>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/i-assess/left-question.png">
+                        <aside class="notes">
+                            <p>This warning pops up <em>after</em> you've left a question.</p>
+                            <p>That sentence is quite hard to parse, right?</p>
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/i-assess/reveal-before.png">
+                        <aside class="notes">
+                            <p>i-assess lets you reveal the answer to a question, which is helpful when you get stuck.</p>
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/i-assess/reveal-after.png">
+                        <aside class="notes">
+                            <p>But what if you want to compare the correct answer with your own?</p>
+                            <p>It's gone.</p>
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/i-assess/steps-before.png">
+                        <aside class="notes">
+                            <p>You can also get a hint, which is called "Steps". Sometimes it lets you enter answers along the way, hence the name, but otherwise that label isn't particularly enlightening.</p>
+                            <p>It's perilously close to the "Reset" button, too.</p>
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/i-assess/steps-after.png">
+                        <aside class="notes">
+                            <p>Why is "Done" not in the steps box?</p>
+                            <p>By the way, what does "0/1" mean?</p>
+                        </aside>
+                    </section>
+
                 </section>
 
                 <section>
-                    <h2>This all applied to question design too</h2>
-                    <p>(make an example)</p>
+                    <section>
+                        <h2>Little details in Numbas</h2>
+                        <aside class="notes">
+                            <p>The "try another question like this" button is a very good example of a UX feature: you could restart the whole exam to get a new question, but the button both makes it easier to practise a single question <em>and prompts you to consider doing it</em>.</p>
+                        </aside>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/numbas/marking-feedback.png">
+                        <h2>Always explain what's happening.</h2>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/numbas/confirm-reveal.png">
+                        <h2>Confirm before doing something irreversible.</h2>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/numbas/invalid-answer.png">
+                        <h2>Show validity warnings <em>before</em> the student submits.</h2>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/numbas/question-selector.png" style="height: 500px">
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <img src="images/numbas/try-another-question.png">
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section class="center-align">
+                        <a target="_blank" href="https://numbas.mathcentre.ac.uk/exam/3839/eams-2016-keynote/preview/">Some questions showing more UX considerations</a>
+                    </section>
                 </section>
+
+                <section>
+                    <section>
+                    <h2>This applies to <br>question design too</h2>
+                    </section>
+                    <section>
+                        <a target="_blank" href="https://numbas.mathcentre.ac.uk/exam/3882/bad-good-question-design/preview/">Two questions</a>
+                    </section>
+                    <section>
+                        <h2 class="left-align">Good questions:</h2>
+                        <ul>
+                            <li>Tell the student what you want them to do.</li>
+                            <li>Tell them how to enter their answer, including any restrictions.</li>
+                            <li>Put things in the right order and make important information easy to find again.</li>
+                            <li>Make sure graphics are readable.</li>
+                            <li>Explain how the mark was calculated.</li>
+                            <li>Are written in full sentences.</li>
+                        </ul>
+                        <aside class="notes">
+                            <p>This isn't just an issue for coders - you need to bear UX in mind when writing a question, too.</p>
+                            <p>Each of these bullet points is a UX issue.</p>
+                            <p>Before anything else, tell the student what they're going to be asked to do.</p>
+                            <p>But make it useful: a notorious author used to put "answer the following questions" at the top of each question.</p>
+                            <p>Unless it's a reading comprehension test, make important information stand out.</p>
+                            <p>Don't ask the student to enter an answer in part b that they could have used to answer part a.</p>
+                            <p>Show qs 1 and 2 of demo exam</p>
+                        </aside>
+                    </section>
+                </section>
+
 
                 <section>
                     <h2>The VLE</h2>
-                    <p>You typically have much less control over the VLE.</p>
-                    <p><strong>BUT</strong></p>
-                    <p>Student should be able to:</p>
-                    <ul>
-                        <li>See their score or status</li>
-                        <li>Review their session</li>
-                    </ul>
+                    <p>You typically have much less control over the larger environment your e-assessment runs in.</p>
+                    <div>
+                        <p><strong>BUT</strong></p>
+                        <p>Student should be able to:</p>
+                        <ul>
+                            <li>See their score or status</li>
+                            <li>Review their session</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section>
-                    <h3>The author experience is also important</h3>
+                    <h3>The authoring experience is also important</h3>
                     <ul>
                         <li>I prefer WYSIWYG to coding</li>
                         <li>There should be a low barrier to entry</li>
                         <li>The interface should link things together - "where is this variable defined?"</li>
                         <li>Organising material is hard!</li>
                     </ul>
+                    <aside class="notes">
+                        <p></p>
                 </section>
 
                 <section>
-                <h2>Here at Newcastle</h2>
-                    <p>We improved student opinion and use of e-assessment</p>
-                    <img src="images/student-survey.png">
-                </section>
-
-                <section>
-                    <h2>By...</h2>
+                    <h2>My favourite Numbas editor features</h2>
                     <ul>
-                        <li>Improving the user experience of our system</li>
-                        <li>Changing the way we make assessment available</li>
+                        <li>Variable preview</li>
+                        <li>&ldquo;How often is this condition met?&rdquo;</li>
+                        <li>&ldquo;Used by&rdquo; and &ldquo;Depends on&rdquo; lists</li>
+                        <li>Instant LaTeX preview on top of WYSIWYG editor</li>
                     </ul>
+
+                    <aside class="notes">
+                        <p>I don't know how anyone gets anything done without live variable generation.</p>
+                    </aside>
                 </section>
 
                 <section>
-                    <p>In 2006, we introduced CBAs to practise key skills in Stage 1.</p>
-                    <p>Students saw a test for one week in practice mode, then get one attempt the following week in assessed mode.</p>
-                    <p>As it was a success, use edge up the syllabus to stages 2 and 3.</p>
-                </section>
+                    <section>
+                        <h2>Here at Newcastle</h2>
+                        <p>We improved student opinion and use of e-assessment</p>
+                    </section>
 
-                <section>
-                    <p>In our new curriculum, students have access to a large bank of practice questions throughout the year.</p>
-                    <p>Assessed tests are picked from the practice bank, so students should try everything.</p>
-                    <p>Usage of practice material increased, particularly before exams.</p>
-                </section>
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/survey-enjoy.png">
+                            </div>
+                        </div>
+                    </section>
 
-                <section>
-                    <h2>Now</h2>
-                    <ul>
-                        <li>Practice tests all over the place during courses</li>
-                        <li>À la carte tests through maths support service.</li>
-                        <li></li>
-                    </ul>
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/survey-practice-mode.png">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/survey-revision.png">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="with-geordie">
+                            <div class="main">
+                                <img src="images/survey-easy-to-use.png">
+                            </div>
+                            <div class="fragment geordie">
+                                <img src="images/geordies/happy.svg">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>By...</h2>
+                        <ul class="list-unstyled">
+                            <li>Improving the user experience of our system.</li>
+                            <li>Changing the way we make assessment available.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <p>In 2006, we introduced CBAs to practise key skills in Stage 1.</p>
+                        <p>Students saw a test for one week in practice mode, then get one attempt the following week in assessed mode.</p>
+                        <p>As it was a success, use edged up the syllabus to stages 2 and 3.</p>
+                    </section>
+
+                    <section>
+                        <p>In our new curriculum, students have access to a large bank of practice questions throughout the year.</p>
+                        <p>Assessed tests are picked from the practice bank, so students should try everything.</p>
+                        <p>Usage of practice material increased, particularly before exams.</p>
+                    </section>
+
                 </section>
 
                 <section>
@@ -179,6 +463,14 @@
                 </section>
 
                 <section>
+                    <h2>Now</h2>
+                    <ul>
+                        <li>Practice tests all over the place during courses</li>
+                        <li>A la carte tests through maths support service.</li>
+                    </ul>
+                </section>
+
+                <section>
                     <p>When marks don't matter, you can do more interesting things.</p>
                     <p><strong>It's not just a question to finish any more.</strong></p>
 					<aside class="notes">
@@ -188,65 +480,98 @@
                 <section>
                     <p>A question is no longer a straight line, leading to a score and feedback.</p>
                     <p>Instead <strong>retry</strong>, and <strong>play</strong> with the system.</p>
-					<aside class="notes">
-                    </aside>    
-                </section>
-
-                <section>
-                    <p>Think up a number between 100 and 1000.</p>
-                    <p>Is it prime?</p>
-                    <p>What's its square root?</p>
-                    <p>What's its largest prime divisor?</p>
-                    <p>Factorise it</p>
-                    <p>
+                    <p class="fragment"><a target="_blank" href="https://numbas.mathcentre.ac.uk/question/15910/ask-questions-based-on-student-s-number/preview/">A question which begins by asking the student for some numbers</a></p>
                     <aside class="notes">
-                        Instead of being given a random number to work with, student gets to pick - they can start to find the patterns.
+                        <p>How many times do you need to practise a question to be sure you can answer it?</p>
+                        <p>Do you stop when you get 100%?</p>
+                        <p>The path to enlightenment is retrying a question until you understand how it works.</p>
+                        <p>Instead of being given a random number to work with, student gets to pick - they can start to find the patterns.</p>
                     </aside>    
                 </section>
 
                 <section>
-                    <p>Displaying stuff visually helps a lot</p>
-                    <p>Graphs</p>
-                    <p>GeoGebra</p>
+                    <h2>Visualisations can help understanding </h2>
+                    <div class="center-align">
+                        <img class="plain" style="width:500px" src="images/geordies/kicking.svg">
+                    </div>
+                    <a target="_blank" href="https://numbas.mathcentre.ac.uk/exam/3883/graphs/preview/">JSXGraph and GeoGebra</a>
 					<aside class="notes">
                     </aside>    
                 </section>
 
                 <section>
-                    <h2>The assessment is really feedback</h2>
-					<aside class="notes">
-                    </aside>    
+                <h2><a target="_blank" href="http://science-to-touch.com/CJS/">CindyJS</a> is amazing</h2>
                 </section>
 
                 <section>
-                    <p>It's a short step from what we're doing to games</p>
-                    <p>Mathbreakers</p>
-                    <p>Sumaze</p>
-                    <aside class="notes">
-                        In these games, the student isn't being directly tested, as far as they're aware.
-                        Instead, in order to succeed, they need to absorb some facts.
-                        Not great at directly imparting knowledge.
-                        "Just good enough" understanding is OK here - don't have to articulate why something works.
-                    </aside>    
+                    <section>
+                        <h2>It's a short step from what we're doing to games</h2>
+                        <aside class="notes">
+                            <p>Now let's look a bit further afield.</p>
+                            <p>In these games, the student isn't being directly tested, as far as they're aware.</p>
+                            <p>Instead, in order to succeed, they need to absorb some facts.</p>
+                            <p>Not great at directly imparting knowledge.</p>
+                            <p>"Just good enough" understanding is OK here - don't have to articulate why something works.</p>
+                            <p>Coming up with a game that models the thing you want to teach is enormously difficult.</p>
+                        </aside>    
+                    </section>
+                    <section>
+                        <h2><a target="_blank" href="https://www.mathbreakers.com/">Mathbreakers</a></h2>
+                        <div style='position:relative; padding-bottom:57%'><iframe src='https://gfycat.com/iframe/SingleHandsomeBarb' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                    </section>
+                    <section>
+                        <h2><a target="_blank" href="https://www.mathbreakers.com/">Mathbreakers</a></h2>
+                        <div style='position:relative; padding-bottom:57%'><iframe src='https://gfycat.com/iframe/ChiefDefiniteFulmar' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                    </section>
+                    <section class="center-align">
+                        <iframe style="width: 960px; height: 500px;" src="https://www.youtube.com/embed/kRC1e8Fdpms" frameborder="0" allowfullscreen></iframe>
+                        <h2><a target="_blank" href="http://www.mei.org.uk/sumaze">Sumaze</a></h2>
+                    </section>
+                    <section class="center-align">
+                        <img style="height: 500px" src="images/euclid-the-game.png">
+                        <h2><a target="_blank" href="http://euclidthegame.com/Level1/">Euclid: The Game</a></h2>
+                    </section>
                 </section>
 
                 <section>
-                    <p>Primary school maths e-assessment is interesting.</p>
-                    <p>MyMaths</p>
-                    <h2>ALL ABOUT PRESENTATION</h2>
+                    <section>
+                        <h2>Primary school maths e-assessment is interesting.</h2>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/mymaths/mymaths1.jpg">
+                        <h2>MyMaths</h2>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/mymaths/mymaths2.jpg">
+                        <h2>MyMaths</h2>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/mymaths/mymaths3.jpg">
+                        <h2>MyMaths</h2>
+                    </section>
+                    <section class="center-align">
+                        <img src="images/mymaths/mymaths4.jpg">
+                        <h2>MyMaths</h2>
+                    </section>
                     <aside class="notes">
                         This is where I admit that instructional design is a thing?
-
                     </aside>    
                 </section>
 
                 <section>
-                    <h2>My to-do list</h2>
-                    <ul>
-                        <li>What UI changes are needed for primary/non-HE use?</li>
-                        <li>Change the "exam" format to something freer.</li>
-                        <li>An interface/language for defining custom marking schemes</li>
-                    </ul>
+                    <div class="with-geordie">
+                        <div class="geordie">
+                            <img src="images/geordies/waving.svg">
+                        </div>
+                        <div class="main">
+                            <h2>My to-do list</h2>
+                            <ul>
+                                <li>What UI changes are needed for primary/non-HE use?</li>
+                                <li>Change the "exam" format to something freer.</li>
+                                <li>An interface/language for defining custom marking schemes</li>
+                            </ul>
+                        </div>
+                    </div>
 					<aside class="notes">
                     </aside>    
                 </section>
@@ -266,7 +591,10 @@
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+                center: true,
+
+                width: 960,
+                height: 720,
 
 				transition: 'fade', // none/fade/slide/convex/concave/zoom
 

@@ -3,6 +3,8 @@
  *********************************************/
 body {
   background-color: hsl(204, 100%, 94%); /* was #acdeff, brightened from 84% */
+  background-image: url(../../images/background.svg);
+  background-size: 20px;
 }
 
 .reveal {
@@ -91,6 +93,11 @@ body {
 .reveal iframe {
   max-width: 95%;
   max-height: 95%; }
+
+.reveal iframe {
+    width: 960px;
+    height: 700px;
+}
 
 .reveal strong,
 .reveal b {
@@ -298,3 +305,29 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal ul.list-unstyled, .reveal ol.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+.reveal li {
+    margin-bottom: 0.5em;
+}
+
+.reveal section .with-geordie {
+    display: flex;
+}
+
+.reveal section .with-geordie .main {
+    flex-basis: 760px;
+}
+
+.reveal section .with-geordie .geordie {
+    flex-basis: 200px;
+    align-self: flex-end;
+}
+
+.reveal section .with-geordie .geordie img {
+    border:none;
+    box-shadow: none;
+}
