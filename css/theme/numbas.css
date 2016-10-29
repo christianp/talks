@@ -2,13 +2,12 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-color: hsl(204, 100%, 94%); /* was #acdeff, brightened from 84% */
-  background-image: url(../../images/background.svg);
+  background-color: hsl(204, 100%, 99%); /* was #acdeff, brightened from 84% */
   background-size: 20px;
 }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 30px;
   font-weight: normal;
   color: #000; }
@@ -53,8 +52,8 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 20px 0 20px 0;
-  color: #000;
-  font-family: "museo_sans500", sans-serif;
+  color: hsl(60,50%,40%);
+  font-family: 'Rye', serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -178,7 +177,7 @@ body {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 640px;
   word-wrap: normal; }
 
 .reveal table {
