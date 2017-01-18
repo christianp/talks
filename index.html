@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Adaptive marking with Numbas</title>
+		<title>Numbas</title>
 
 		<meta name="description" content="How Numbas implements adaptive marking for mathematics questions">
 		<meta name="author" content="Christian Lawson-Perfect">
@@ -41,41 +41,33 @@
 
 			<div class="slides">
 				<section>
-					<h1>Adaptive marking with Numbas</h1>
-					<h3></h3>
-					<p>
-                        <small><a href="mailto:christian.perfect@ncl.ac.uk">Christian Lawson-Perfect</a>, Newcastle University. <a href="http://twitter.com/nclnumbas">@NclNumbas</a></small>
+					<h1>Numbas</h1>
+					<p style="text-align: center">
+                        <a href="https://www.staff.ncl.ac.uk/christian.perfect/">Christian Lawson-Perfect</a>
+                        <br>
+                        and 
+                        <br>
+                        <a href="mailto:christopher.graham@ncl.ac.uk">Christopher Graham</a>
+                    </p>
+                    <p style="text-align: center">
+                        Newcastle University. 
 					</p>
                 </section>
 
-                <section id="hi">
-                    <h2>Hi</h2>
-                    <p class="left-align">
-                        Christian Lawson-Perfect,
-                        <br>
-                        School of Mathematics and Statistics, 
-                        <br>
-                        Newcastle University.
-                    </p>
-                    <p>I've been working on Numbas as its lead developer since 2011.</p>
+                <section>
+                    <img style="height:520px;display:block;margin:0 auto;" src="images/numbat.jpg">
+                    <h2>Numba<em>t</em></h2>
+                    <p><small>(Photo Martin Pot, CC-BY 3.0, <a href="https://commons.wikimedia.org/wiki/File:Numbat.jpg">Wikimedia Commons</a>)</small></p>
                 </section>
 
                 <section id="numbas-is">
-                    <h2>What is Numbas?</h2>
-
                     <p>Numbas is an open-source system developed by the e-Learning Unit of Newcastle University's School of Maths and Stats, based on many years of use, experience and research into e-assessment.</p>
                     <p>It's aimed at numerate disciplines.</p>
                     <p>It creates SCORM-compliant exams which run entirely in the browser, compatible with VLEs such as Blackboard and Moodle.</p>
                 </section>
 
-                <section id="history">
-                    <h2>History</h2>
-
-                    <p>Numbas follows the CALM model.</p>
-
-                    <p>At Newcastle, we used the commercial system <em>i-assess</em> for six years before switching to Numbas.</p>
-
-                    <p>Development began in 2011 with the aim of replacing <em style="display: inline-block;">i-assess.</em></p>
+                <section>
+                    <img src="images/a-question.png">
                 </section>
 
                 <section id="design">
@@ -83,46 +75,9 @@
 
                     <ul>
                         <li>Scalable, reliable and accessible to a broad range of users.</li>
-                        <li>Good at maths, but usable for other subjects too.</li>
                         <li>Good-looking and easy for students to use.</li>
-                        <li>Used by question authors who aren't experts.</li>
-                        <li>Emphasis on creating rich formative e-assessment and learning materials.</li>
-                        <li>Feedback an important part of the design and implementation.</li>
+                        <li>Used by question authors who aren't experts, <strong>without support</strong>.</li>
                     </ul>
-                </section>
-
-                <section id="usability">
-                    <h2>Usability</h2>
-
-                    <h3>For students</h3>
-                    <p>The interface is clean, and accessible by screen readers. Feedback is immediate.</p>
-                    <p>Tests run on any device - desktop, tablet, mobile - with a responsive design.</p>
-                    <p>Over several years, and based on student feedback, the interface has improved.</p>
-                </section>
-
-                <section>
-                    <img src="images/numbas_runtime.png">
-                </section>
-
-                <section id="usability-authors">
-                    <h2>Usability</h2>
-
-                    <h3>For authors</h3>
-                    <p>Using the graphical editor, you can create a simple question with no previous knowledge.</p>
-                    <p>Gradually add more complicated elements, such as LaTeX maths notation.</p>
-                    <p>Can test run questions immediately.</p>
-                    <p>Template questions make customising existing material easier.</p>
-                </section>
-
-                <section>
-                    <img src="images/numbas_editor.png">
-                </section>
-
-                <section id="integration-with-vle">
-                    <h2>Integration with a VLE</h2>
-
-                    <p>Numbas uses the SCORM 2004 standard to integrate with compliant VLEs, such as Moodle and Blackboard.</p>
-                    <p>Or you can use it without a VLE.</p>
                 </section>
 
                 <section id="customisation">
@@ -133,6 +88,16 @@
                     <p>A large driver for Numbas was the lack of customisability in previous systems.</p>
                     <p>Interface and logic are completely separated in Numbas - custom themes can change the look of tests, or reimagine how they're run.</p>
                     <p>Extensions allow the addition of new functions, data types, and resources.</p>
+                </section>
+
+                <section id="integration-with-vle">
+                    <h2>Integration with a VLE</h2>
+
+                    <ul>
+                        <li>Numbas can use the SCORM standard to integrate with compliant VLEs, such as Moodle and Blackboard.</li>
+                        <li>Or there's a Basic LTI tool provider which works better than most SCORM implementations.</li>
+                        <li>Or you can use it without a VLE.</li>
+                    </ul>
                 </section>
 
                 <section id="formative-vs-summative">
@@ -147,75 +112,59 @@
                     </ul>
                 </section>
 
-                <section id="open-access">
-                    <h2>Open access</h2>
-                    
-                    <p>Compiled Numbas tests are SCORM packages: they're completely self-contained. Perfect for open access resources.</p>
-                    <p>We want to establish a community of authors and users producing quality open-access material.</p>
-                    </section>
-                <section>
-                    <img src="images/open_access_questions.png">
-                </section>
+                <section id="current-use">
+                    <h2>Current use</h2>
 
-                <section id="complexity-of-questions">
-                    <h2>Complexity of questions</h2>
-
-                    <p>Most high school or undergrad maths questions are easily implemented in Numbas.</p>
-                    <p>Randomising questions can be hard, and marking can be hard - but Numbas makes it easier.</p>
-                </section>
-
-                <section id="complexity-of-questions-variables">
-                    <h2>Variable generation</h2>
-
-                    <p>Variables are generated declaratively; variables can build on other variables.</p>
-                    <p>The definition interface allows you to work interactively: see generated values immediately, and test for properties.</p>
+                    <ul>
+                        <li><strong>At Newcastle</strong> in the Maths and Stats degree, and many service courses.</li>
+                        <li><strong>100+ universities</strong> in the UK and around the world.</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <img src="images/variable_testing.png">
-                </section>
+                    <h2>The unique challenge of doing everything client-side, in JS</h2>
 
-                <section id="adaptive-marking">
-                    <h2>Adaptive marking</h2>
-
-                    <p>Students kept asking for error-carried-forward marking.</p>
-                    <p>This is complicated to implement, and doubly so when questions are randomised.</p>
-                </section>
-
-                <section id="adaptive-marking-implementation">
-                    <h2>Adaptive marking</h2>
-
-                    <p><strong>Solution:</strong> when marking a part, replace some question variable(s) with the student's answers to previous parts.</p>
-                    <p>A new "correct" answer is automatically calculated.</p>
-                    <p class="fragment">It works surprisingly well!</p>
+                    <ul>
+                        <li>No calling out to a CAS</li>
+                        <li>So you've got to reimplement everything from scratch</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <img src="images/adaptive_marking_question.png">
+                   <h3>(Not completely true)</h3>
+                    <div class="pull-right" style="width: 300px">
+                        <img src="images/train.jpg" width="300">
+                        <small>Google image search for "good train", CC-BY 2.0, John on <a href="https://commons.wikimedia.org/wiki/File:Valley_Railroad_Mikado_40_(1).jpg">Wikimedia Commons</a></small>
+                    </div>
+                    <p>On the train up, I had some luck making the variable generator work asynchronously, which would allow calls to remote systems.</p>
                 </section>
 
                 <section>
-                    <img src="images/adaptive_marking_replacement.png">
+                    <h2>Helping with development</h2>
+
+                    <ul>
+                        <li>Most feature ideas go in the <a href="https://github.com/numbas/Numbas/issues">GitHub issue tracker</a>.</li>
+                        <li>We've had some success using <a href="http://up-for-grabs.net/">up-for-grabs.net</a> to attract new contributors.</li>
+                        <li>Our website has a <a href="http://www.numbas.org.uk/contributing-to-numbas/">Contribute to Numbas</a> page with information on different ways to contribute.</li>
+                    </ul>
                 </section>
-
-                <section>
-                    <img src="images/adaptive_marking_marked.png">
-                </section>
-
-                <section id="demo">
-                    <h2>Demo</h2>
-
-                    <p class="center-align"><a target="_blank" href="http://numbas.mathcentre.ac.uk">numbas.mathcentre.ac.uk</a></p>
-
-                </section>
-
 
                 <section id="end">
                     <h2>Thanks!</h2>
 
+                    <div class="pull-right" style="width:300px">
+                        <img src="images/numbat_standing.jpg" width="300">
+                        <p><small>Photo &copy; S J Bennett, CC-BY, on <a href="https://www.flickr.com/photos/quollism/9290711077/in/photostream/">Flickr</a></small></p>
+                    </div>
+
                     <h3>Website</h3>
                     <ul style="list-style:none">
                         <li><a href="http://www.numbas.org.uk">numbas.org.uk</a></li>
+                    </ul>
+
+                    <h3>Editor</h3>
+                    <ul style="list-style:none">
+                        <li><a href="https://numbas.mathcentre.ac.uk">numbas.mathcentre.ac.uk</a></li>
                     </ul>
 
                     <h3>Contact</h3>
